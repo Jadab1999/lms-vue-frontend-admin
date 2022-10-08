@@ -1,0 +1,120 @@
+@import "../../../../Variable";
+
+.sup_page_heading{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 20px;
+    h2{
+        margin: 0 20px 0 0;
+    }
+}
+.sup_menu_access_set{ 
+    .p-multiselect{
+        width: 100%;
+    }
+    .p-multiselect-items{
+        .p-multiselect-item{
+            width: 33.33%;
+        }
+    }
+    input{
+        border: 0;
+    }
+    h4{
+        font-size: $font-size - 2;
+        font-family: $font-family-secondary;
+        line-height: 1.4;
+        font-weight: 600;
+        margin-bottom: 5px;
+    }
+}
+
+.sup_role_edit, .sup_role_add{
+    .p-multiselect{
+        width: 100%;
+    }
+    h4{
+        font-size: $font-size - 2;
+        font-family: $font-family-secondary;
+        line-height: 1.4;
+        font-weight: 600;
+        margin-bottom: 5px;
+    }
+}
+.sup_menu_given{
+    border-top: 1px solid #cecece;
+    border-bottom: 1px solid #cecece;
+    margin: 12px 0 0;
+    padding: 10px 0;
+
+    span{
+        font-size: $font-size - 2;
+        color: lighten($body-text, 30%);
+    }
+
+    ul{
+        display: flex;
+        align-items: center;
+        list-style: none;
+        flex-wrap: wrap;
+        li{
+            border-radius: 5px;
+            padding: $spacer-xs - 1 $spacer-sm - 2;
+            margin-right: 8px;
+            margin-bottom: 8px;
+            background-color: #3d76de;
+            color: #ffffff;
+            font-size: $font-size - 4;
+            line-height: $font-size + 1;
+            cursor: pointer;
+        }
+        span.sup_menu_badge{
+            display: flex;
+            align-items: center;
+            i{
+                margin-left: 5px;
+                font-size: 13px;
+                line-height: 15px;
+            }
+        }
+    }
+}
+
+.sup_search_clear{
+    height: 39px;
+    margin-right: 10px;
+}
+
+.sup_role_status {
+    border-radius: 100%;
+    padding: 5px;
+    width: auto;
+    display: inline;
+    i.pi{
+        border: 2px solid transparent;
+        border-radius: 100%;
+        padding: 3px;
+        box-sizing: border-box;
+        font-size: $font-size - 5;
+        width: 22px;
+        height: 22px;
+        line-height: $font-size - 2;
+        font-weight: 600;
+        margin-right: 6px;
+    }
+
+    &.sup_role_status_active{
+        color: $success;
+        i.pi{
+            border-color: $success;
+        }
+    }
+
+    &.sup_role_status_deactive{
+        color: $danger;
+        i.pi{
+            border-color: $danger;
+        }
+    }
+}

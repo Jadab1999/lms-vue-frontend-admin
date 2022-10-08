@@ -1,0 +1,697 @@
+@import "../../Variable.scss";
+
+.tox-notification--warning, .tox-statusbar__branding{
+    display: none !important;
+}
+.tox-edit-area{
+    iframe{
+       table{
+        border: 0px dashed #bbb !important;
+       }        
+    }
+   
+}
+.sup_main_container{
+    margin-left: 250px;
+    background-color: $body-bg;
+    // background: $body-bg url($General-bg-image-url) no-repeat center center/ auto 98%;
+    min-height: 100vh;
+
+    .skin-dark &{
+        background-color: $theme-black;
+    }
+
+    &.sup_sidbar_collapsed{
+        margin-left: 60px;
+    }
+
+    .sup_content{
+        min-height: calc(100vh - 120px);
+        padding: 30px;
+        position: relative;
+
+        h2{
+            font-size: $h2-font-size;
+            line-height: $h2-font-size + 8;
+            font-family: $font-family-secondary;
+            color: #343434;
+            margin-bottom: 20px;
+            font-weight: 700;
+
+            .skin-dark &{
+                color: $white;
+            }
+
+            small{
+                font-size: 15px;
+                font-weight: 500;
+                text-transform: capitalize;
+                margin-left: $spacer-sm;
+            }
+        }
+
+        .sup_page_heading{
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            margin-bottom: 20px;
+            h2{
+                margin: 0 20px 0 0;
+            }
+        }
+    }
+
+    .sup_inner_content{
+        background-color: #ffffff;
+        padding: 30px 20px;
+        box-shadow: 0 0 10px darken($light-gray, 5%);
+        border-radius: 8px;
+
+        .skin-dark &{
+            box-shadow: 0 0 10px rgb(131, 133, 133);
+        }
+    }
+
+    label{
+        font-size: $font-size - 2;
+        font-weight: 500;
+        color: lighten($black, 60%);
+        font-family: $font-family-secondary;
+    }
+
+    .p-inputtext{
+        font-family: $font-family-secondary;
+        font-size: $font-size - 1;
+        line-height: $font-size + 5;
+        font-weight: 500;
+    }
+}
+
+/* Text colors */
+.sup_text_danger{
+    color: $danger;
+}
+.sup_text_success{
+    color: $success;
+}
+.sup_text_warning{
+    color: $warning;
+}
+.sup_text_black{
+    color: $black;
+}
+/* Text colors */
+
+
+
+.sup_login_massage, .sup_form_massage{
+    padding: 8px;
+    font-size: 16px;
+    line-height: 1.3;
+    border-left: 6px  solid;
+    font-weight: 500;
+
+    &.error{
+        background-color: lighten($danger, 48%);
+        border-color: $danger;
+        color: darken($danger, 10%);
+    }
+    &.success{
+        background-color: lighten($success, 48%);
+        border-color: $success;
+        color: darken($success, 10%);
+    }
+}
+
+.sup_button_sm {
+    .p-button.p-button-icon-only{
+        font-size: 0.875rem;
+        padding: 0.4375rem 0.4375rem;
+    }
+}
+
+.sup_left_action button{
+    span.pi{
+        font-size: $font-size + 4;
+        line-height: $font-size + 7;
+    }
+
+    span.p-button-label{
+        font-size: 0;
+        line-height: $font-size + 4;
+    }
+}
+
+.sup_header_nav button{
+    span.pi{
+        font-size: $font-size + 4;
+        line-height: $font-size + 7;
+
+        &.pi-sun{
+            color: $warning;
+        }
+    }
+
+    span.p-button-label{
+        font-size: 0;
+        line-height: $font-size + 4;
+    }
+}
+
+.sup_search_box{
+    max-width: 200px;
+    .p-inputtext{
+        max-width: 100%;
+        text-overflow: ellipsis;
+        font-size: $font-size - 4;
+    }
+}
+
+.sup-button-svg-icon{
+    svg{
+        fill: $black;
+        *{
+            fill: $black;
+        }
+    }
+}
+
+/* Status Switch */
+.sup_status_switch{
+    position: relative;
+    display: inline-block;
+    height: 26px;
+
+    &.sup_status_switch_disable {
+        pointer-events: none;
+        cursor:not-allowed;
+        opacity: 0.6;
+    }
+
+    input{
+        position: absolute;
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .sup_switch_label{
+        position: relative;
+        display: block;
+        height: inherit;
+        font-size: $font-size - 4;
+        line-height: 28px;
+        background-color: darken($gray, 15%);
+        color: $white;
+        border-radius: inherit;
+        box-sizing: border-box;
+        font-weight: 600;
+        transition: All .3s ease;
+        overflow: hidden;
+        width: 55px;
+        border-radius: 15px;
+        text-align: right;
+        cursor: pointer;
+        letter-spacing: 0.3px;
+
+        &:focus{
+            box-shadow: 0 0 0 0.2rem lighten($info, 42%);
+        }
+
+        // &:hover{
+        //     background-color: darken($info, 2%);
+        // }
+
+        &::before{
+            content: attr(data-active);
+            right: -100px;
+            color: #fff;
+            width: 100%;
+            box-sizing: border-box;
+            position: absolute;
+            top: 0;
+            height: 100%;
+            z-index: 1;
+            padding-left: $spacer-xs + 2;
+            line-height: 28px;
+        }
+
+        &::after{
+            content: attr(data-inactive);
+            left: 0;
+            color: #fff;
+            line-height: 28px;
+            width: 100%;
+            box-sizing: border-box;
+            position: absolute;
+            top: 0;
+            height: 100%;
+            padding-right: $spacer-xs + 2;
+            z-index: 1;
+            line-height: 26px;
+
+            &:focus{
+                box-shadow: 0 0 0 0.2rem lighten($info, 42%);
+            }
+        }
+    }
+
+    .sup_switch_handle{
+        position: absolute;
+        top: 50%;
+        left: 5px;
+        width: 15px;
+        height: 15px;
+        border-radius: 100%;
+        background: #fff;
+        transition: all .5s ease-in-out;
+        transform: translateY(-50%);
+
+        .sup_user_status_inactive &{
+            background-color: $info;
+        }
+
+        .sup_user_status_active &{
+            background-color: $info;
+        }
+    }
+
+    input:checked~{
+        .sup_switch_label{
+            text-align: left;
+            padding-right: 0;
+            background-color: $info;
+
+            &::before{
+                right: 0;
+            }
+
+            &::after{
+                left: -100px;
+            }
+        }
+
+        .sup_switch_handle{
+            left: auto;
+            right: 5px;
+        }
+    }
+}
+/* Status Switch */
+
+/* Pop-up Submit area */
+.sup_submit_wrap{
+    align-items: center;
+
+    button.sup_submit{
+        width: auto;
+        min-width: 120px;
+    }
+    button.sup_reset{
+        width: auto;
+        min-width: 120px;
+    }
+}
+/* Pop-up Submit area */
+
+/* Language Update */
+.sup_language_update{
+    .p-inputtextarea{
+        width: 100%;
+    }
+}
+/* Language Update */
+
+/* Table item status */
+.sup_item_status{
+    padding: 0 $spacer-xs + 1;
+    border-radius: 5px;
+    font-size: $font-size - 3;
+    line-height: 1.5;
+    font-family: $font-family-secondary;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+
+    &.sup_item_status_danger{
+        background-color: lighten($danger, 45%);
+        color: darken($danger, 15%);
+    }
+    &.sup_item_status_success{
+        background-color: lighten($success, 45%);
+        color: darken($success, 15%);
+    }
+
+    i.pi{
+        font-size: $font-size - 5;
+        font-weight: 600;
+        margin-right: $spacer-xs - 1;
+    }
+}
+/* Table item status */
+
+/* Prime style modify */
+.p-component{
+    font-family: $font-family-primary;
+}
+
+.p-button{
+    font-family: $font-family-secondary;
+    box-shadow: 1px 1px 4px rgba($black, 0.13);
+    border-radius: 30px;
+
+    .p-button-label{
+        font-size: $font-size - 4;
+        line-height: $font-size + 3;
+        font-weight: 500;
+    }
+
+    &.p-button-icon-only.p-button-rounded.p-button-sm{
+        height: 1.857rem;
+        width: 1.857rem;
+        padding: 0.4375rem 0.3rem;
+    }
+
+    &.p-button-secondary{
+        background: darken($secondary, 5%);
+        border-color: darken($secondary, 5%);
+
+        &:enabled:hover{
+            background: $secondary;
+            border-color: $secondary;
+        }
+
+        &:enabled:active{
+            background: $secondary;
+            border-color: $secondary;
+        }
+
+        &:enabled:focus{
+            box-shadow: 0 0 0 0.2rem lighten($secondary, 42%);
+        }
+    }
+    
+    &.p-button-success{
+        background: darken($success, 5%);
+        border-color: darken($success, 5%);
+
+        &:enabled:hover{
+            background: $success;
+            border-color: $success;
+        }
+
+        &:enabled:active{
+            background: $success;
+            border-color: $success;
+        }
+    }
+
+    &.p-button-primary{
+        background: lighten($primary, 5%);
+        border-color: lighten($primary, 5%);
+
+        &:enabled:hover{
+            background: $primary;
+            border-color: $primary;
+        }
+
+        &:enabled:active{
+            background: $primary;
+            border-color: $primary;
+        }
+    }
+
+    &.p-button-info{
+        background: darken($orange, 5%);
+        border-color: darken($orange, 5%);
+
+        &:enabled:hover{
+            background: $orange;
+            border-color: $orange;
+        }
+
+        &:enabled:active{
+            background: $orange;
+            border-color: $orange;
+        }
+    }
+
+    &.p-button-dark{
+        background: $black;
+        border-color: $black;
+        color: $white;
+
+        &:enabled:hover{
+            background: lighten($black, 10%);
+            border-color: lighten($black, 10%);
+            color: $white;
+        }
+
+        &:enabled:active{
+            background: lighten($black, 10%);
+            border-color: lighten($black, 10%);
+        }
+    }
+
+    &.p-button-white-shadow{
+        background-color: $white;
+        border-color: $white;
+        color: $black;
+
+        &:enabled:hover{
+            background-color: darken($white, 2%);
+            border-color: darken($white, 2%);
+            color: $black;
+        }
+
+        &:enabled:active{
+            background-color: darken($white, 2%);
+            border-color: darken($white, 2%);
+            color: $black;
+        }
+
+        &:focus{
+            box-shadow: 0 0 0 0.2rem lighten($black, 85%);
+            color: $black;
+        }
+
+        .p-ink{
+            background-color: darken($white, 15%);
+        }
+    }
+}
+.p-tooltip{
+    z-index: 10000001001 !important;
+
+    &.p-tooltip-right .p-tooltip-arrow{
+        border-right-color: $black;
+    }
+
+    &.p-tooltip-left .p-tooltip-arrow{
+        border-left-color: $black;
+    }
+
+    &.p-tooltip-bottom .p-tooltip-arrow{
+        border-bottom-color: $black;
+    }
+
+    &.p-tooltip-top .p-tooltip-arrow{
+        border-top-color: $black;
+    }
+
+    .p-tooltip-text{
+        padding: $spacer-xs $spacer-xs !important;
+        font-family: "Poppins", sans-serif !important;
+        font-size: $font-size - 4 !important;
+        letter-spacing: initial !important;
+        word-spacing: initial !important;
+        background-color: $black;
+    }
+}
+.p-toolbar{
+    .skin-dark &{
+        background: lighten($theme-black, 81%);
+    }
+}
+.p-datatable .p-datatable-header{
+    .skin-dark &{
+        background: lighten($theme-black, 81%);
+    }
+    .p-datatable-thead > tr > th{
+        .skin-dark &{
+            background: lighten($theme-black, 81%);
+        }
+    }
+}
+.p-field{
+    & > small.p-invalid{
+        font-size: $font-size - 2;
+        line-height: $font-size + 2;
+        display: inline-block;
+    }
+
+    > label{
+        font-size: $font-size - 2;
+        font-family: $font-family-secondary;
+        line-height: 1.4;
+        font-weight: 500;
+        margin-bottom: 5px !important;
+        color: $body-text;
+    }
+}
+.p-inputtext{
+    font-family: $font-family-primary;
+    font-size: $font-size - 1;
+    line-height: 1.4;
+
+    &.p-inputtext:enabled:hover {
+        border-color: $primary;
+    }
+}
+.p-dialog{
+    border-radius: 8px;
+    overflow: hidden;
+
+    .p-dialog-header{
+        border-bottom: 1px solid;
+        background: $tertiary;
+        color: $white;
+        padding: $spacer - 8 $spacer + 4;
+
+        .p-dialog-header-icon{
+            background: $white;
+            color: $primary;
+        }
+    }
+
+    .p-dialog-content{
+        padding-top: $spacer + 12;
+    }
+}
+.p-splitbutton.p-button-secondary{ 
+    > .p-button{
+        background: darken($secondary, 5%);
+        border-color: darken($secondary, 5%);
+
+        &:enabled:hover{
+            background: $secondary;
+            border-color: $secondary;
+        }
+
+        &:enabled:active{
+            background: $secondary;
+            border-color: $secondary;
+        }
+
+        &:enabled:focus{
+            box-shadow: 0 0 0 0.2rem lighten($secondary, 42%);
+        }
+    }
+}
+.p-dropdown{
+    &:not(.p-disabled):hover {
+        border-color: $primary;
+    }
+}
+.p-dropdown-panel{
+    .p-dropdown-items .p-dropdown-item{
+        font-size: $font-size - 1;
+    }
+}
+.p-calendar{
+
+    .sup_inner_content &{
+        max-width: 200px;
+
+        .p-inputtext{
+            max-width: 100%;
+            text-overflow: ellipsis;
+            font-size: $font-size - 4;
+            line-height: 21px;
+        }
+    }
+
+    .p-button{
+        border-radius: 3px;
+        background: lighten($primary, 5%);
+        border-color: lighten($primary, 5%);
+
+        &:enabled:hover{
+            background: $primary;
+            border-color: $primary;
+        }
+
+        &:enabled:active{
+            background: $primary;
+            border-color: $primary;
+        }
+
+        &:enabled:focus{
+            box-shadow: 0 0 0 0.2rem lighten($primary, 42%);
+        }
+    }
+}
+.p-datatable {
+    .p-datatable-header{
+        background-color: transparent;
+        border-top: 0;
+        padding: 0 0 $spacer-sm + 5;
+    }
+    
+    .p-datatable-thead{
+        .p-column-title{
+            font-size: $font-size - 2;
+            line-height: 1.4;
+        }
+    }
+
+    .p-datatable-tbody{
+        > tr > td{
+            font-size: $font-size - 2;
+        }
+    }
+
+    .p-paginator{
+        justify-content: flex-end;
+        padding: $spacer-sm 0;
+        background: rgba($black, 0.02);
+        font-family: $font-family-secondary;
+
+        .p-paginator-current{
+            font-size: $font-size - 2;
+            line-height: 1.4;
+            font-family: $font-family-secondary;
+            font-weight: 600;
+            margin-right: auto;
+        }
+
+        .p-paginator-pages .p-paginator-page.p-highlight{
+            border-radius: 100%;
+            background: rgba($primary, 0.15);
+            font-size: $font-size - 2;
+            line-height: 1.4;
+            font-family: $font-family-secondary;
+            font-weight: 600;
+        }
+    }
+}
+.p-tabview{
+    .p-tabview-nav{
+        justify-content: center;
+    }
+}
+/* Prime style modify */
+
+.sup_role_management{
+    .p-dialog-content{
+        overflow: visible;
+    }
+}
+
+.sup_website_url{
+    margin-left: $spacer-xs;
+
+    i.pi{
+        font-size: $font-size - 4;
+        font-weight: 600;
+    }
+}

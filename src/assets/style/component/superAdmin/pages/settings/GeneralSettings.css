@@ -1,0 +1,122 @@
+.text-danger {
+  color: #e60017 !important;
+}
+
+.text-success {
+  color: #0dbb4d !important;
+}
+
+.text-warning {
+  color: #ffaa05 !important;
+}
+
+.text-primary {
+  color: #2767da !important;
+}
+
+.text-secondary {
+  color: #06c8aa !important;
+}
+
+.text-white {
+  color: #ffffff !important;
+}
+
+.text-black {
+  color: #000000 !important;
+}
+
+.bg-danger {
+  background-color: #e60017 !important;
+}
+
+.bg-success {
+  background-color: #0dbb4d !important;
+}
+
+.bg-warning {
+  background-color: #ffaa05 !important;
+}
+
+.bg-primary {
+  background-color: #2767da !important;
+}
+
+.bg-secondary {
+  background-color: #06c8aa !important;
+}
+
+.bg-white {
+  background-color: #ffffff !important;
+}
+
+.bg-black {
+  background-color: #000000 !important;
+}
+
+.sup_settings_form {
+  position: relative;
+}
+
+.sup_settings_form .card {
+  margin-bottom: 25px;
+  background-color: rgba(245, 245, 245, 0.6);
+  border: 1px solid #e3e3e3;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.sup_settings_form .card h3 {
+  margin-bottom: 15px;
+}
+
+.sup_settings_form .card .p-inputswitch {
+  vertical-align: middle;
+}
+
+.sup_settings_form .card .sup_payment_mthod {
+  vertical-align: middle;
+  margin-left: 10px;
+  background-color: #2767da;
+  border-radius: 3px;
+  padding: 4px 10px;
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 1;
+  font-weight: 600;
+}
+
+.sup_settings_form .card .sup_deployment_status {
+  vertical-align: middle;
+  margin-left: 10px;
+  background-color: #2767da;
+  border-radius: 3px;
+  padding: 4px 10px;
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 1;
+  font-weight: 600;
+}
+
+.sup_settings_form .sup_settings_loading {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.sup_settings_form .sup_settings_loading i.pi {
+  font-size: 40px;
+}
+/*# sourceMappingURL=GeneralSettings.css.map */

@@ -1,0 +1,126 @@
+@import '../../../../Variable';
+
+.language_status{
+    padding: 0 $spacer-xs + 1;
+    border-radius: 5px;
+    font-size: $font-size - 3;
+    line-height: 1.5;
+    font-family: $font-family-secondary;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+
+    &.language_status_danger{
+        background-color: lighten($danger, 45%);
+        color: darken($danger, 15%);
+    }
+    &.language_status_success{
+        background-color: lighten($success, 45%);
+        color: darken($success, 15%);
+    }
+
+    i.pi{
+        font-size: $font-size - 5;
+        font-weight: 600;
+        margin-right: $spacer-xs - 1;
+    }
+}
+
+.sup_translation_wrap{
+    .sup_translation_col{
+        background-color: darken($white, 5%);
+        border-radius: 10px;
+        padding: $spacer-sm;
+        border: 1px solid rgba($black, 0.1);
+        margin-bottom: $spacer-sm;
+        position: relative;
+
+        .sup_language_name{
+            font-size: $font-size - 2;
+            line-height: 1.4;
+            font-weight: 600;
+            font-family: $font-family-secondary;
+            color: lighten($body-text, 10%);
+            margin-bottom: $spacer-sm;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+
+            .sup_language_flag{
+                padding-right: $spacer-xs;
+
+                img{
+                    width: 26px;
+                }
+            }
+        }
+
+        .sup_language_value{
+            font-size: $font-size;
+            line-height: 1.4;
+            font-family: $font-family-secondary;
+            font-weight: 500;
+            color: $black;
+        }
+
+        .sup_language_updatedon{
+            font-size: $font-size - 5;
+            line-height: 1.4;
+            font-weight: 500;
+            font-family: $font-family-secondary;
+            color: lighten($body-text, 25%);
+
+            &::before{
+                content: '|';
+                margin-left: $spacer-xs;
+                margin-right: $spacer-xs;
+            }
+
+            strong{
+                font-weight: 600;
+            }
+        }
+
+        .sup_language_edit{
+            position: absolute;
+            right: 5px;
+            top: 5px;
+            cursor: pointer;
+            background-color: transparent;
+            width: 25px;
+            height: 25px;
+            border-radius: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background-color 0.5s ease-in-out;
+
+            i.pi{
+                font-size: $font-size - 4;
+                color: $primary;
+                font-weight: 600;
+                pointer-events: none;
+            }
+
+            &:hover{
+                background-color: lighten($primary, 34%);
+            }
+        }
+
+        .sup_language_edit_area{
+            &.sup_hide_edit{
+                display: none;
+            }
+            &.sup_show_edit{
+                display: block;
+
+                & ~ .sup_language_view_area{
+                    display: none;
+                }
+            }
+            .p-field{
+                margin-bottom: 0;
+            }
+        }
+    }
+}

@@ -1,0 +1,27 @@
+@import "../../../../Variable.scss";
+
+.sup_user_profile{
+    .sup_profile_icon{
+        width: 160px;
+        display: block;
+        margin: 0 auto;
+        position: relative;
+
+        figure{
+            display: block;
+
+            img{
+                border-radius: 100%;
+                overflow: hidden;
+                border: 5px solid $white;
+                box-shadow: 1px 1px 4px #00000030;
+            }
+        }
+
+        .p-button{
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+        }
+    }
+}

@@ -1,0 +1,136 @@
+.text-danger {
+  color: #e60017 !important;
+}
+
+.text-success {
+  color: #0dbb4d !important;
+}
+
+.text-warning {
+  color: #ffaa05 !important;
+}
+
+.text-primary {
+  color: #2767da !important;
+}
+
+.text-secondary {
+  color: #06c8aa !important;
+}
+
+.text-white {
+  color: #ffffff !important;
+}
+
+.text-black {
+  color: #000000 !important;
+}
+
+.bg-danger {
+  background-color: #e60017 !important;
+}
+
+.bg-success {
+  background-color: #0dbb4d !important;
+}
+
+.bg-warning {
+  background-color: #ffaa05 !important;
+}
+
+.bg-primary {
+  background-color: #2767da !important;
+}
+
+.bg-secondary {
+  background-color: #06c8aa !important;
+}
+
+.bg-white {
+  background-color: #ffffff !important;
+}
+
+.bg-black {
+  background-color: #000000 !important;
+}
+
+.up_profile_container {
+  width: 100%;
+  max-width: 1024px;
+  margin: 40px auto;
+  background: transparent;
+  padding: 30px;
+  -webkit-box-shadow: 0 3px 12px -3px #0003;
+          box-shadow: 0 3px 12px -3px #0003;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 680px) {
+  .up_profile_container {
+    margin: 20px auto 40px auto;
+  }
+}
+
+.up_profile_container.loading {
+  position: relative;
+}
+
+.up_profile_container.loading::before {
+  content: "\e926";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 40px;
+  -webkit-animation: fa-spin 2s linear infinite;
+  animation: fa-spin 2s linear infinite;
+  font-family: primeicons;
+  font-style: normal;
+  font-weight: 400;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  display: inline-block;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  z-index: 2;
+}
+
+.up_profile_container.loading::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.7);
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+
+.up_profile_container .up_profile_icon figure {
+  display: block;
+  margin-right: 30px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.up_profile_container .up_profile_icon figure img {
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  display: block;
+  border: 2px solid #e3e3e3;
+}
+
+.up_profile_container .up_profile_icon .up_profile_upload small {
+  font-style: italic;
+}
+
+@media screen and (max-width: 680px) {
+  .p-formgrid .p-col {
+    -ms-flex-preferred-size: unset;
+        flex-basis: unset;
+    padding: 0 0.5rem;
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=Profile.css.map */

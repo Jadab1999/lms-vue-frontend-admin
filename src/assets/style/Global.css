@@ -1,0 +1,196 @@
+@import url(/home/jadab/Truabilities/truabilities-vue-admin-portal/node_modules/primevue/resources/primevue.min.css);
+@import url(/home/jadab/Truabilities/truabilities-vue-admin-portal/node_modules/primevue/resources/themes/bootstrap4-light-blue/theme.css);
+@import url(/home/jadab/Truabilities/truabilities-vue-admin-portal/node_modules/primevue/resources/themes/saga-blue/theme.css);
+@import url("https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+.text-danger {
+  color: #e60017 !important;
+}
+
+.text-success {
+  color: #0dbb4d !important;
+}
+
+.text-warning {
+  color: #ffaa05 !important;
+}
+
+.text-primary {
+  color: #2767da !important;
+}
+
+.text-secondary {
+  color: #06c8aa !important;
+}
+
+.text-white {
+  color: #ffffff !important;
+}
+
+.text-black {
+  color: #000000 !important;
+}
+
+.bg-danger {
+  background-color: #e60017 !important;
+}
+
+.bg-success {
+  background-color: #0dbb4d !important;
+}
+
+.bg-warning {
+  background-color: #ffaa05 !important;
+}
+
+.bg-primary {
+  background-color: #2767da !important;
+}
+
+.bg-secondary {
+  background-color: #06c8aa !important;
+}
+
+.bg-white {
+  background-color: #ffffff !important;
+}
+
+.bg-black {
+  background-color: #000000 !important;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 16px;
+  line-height: 22px;
+  font-family: "Oxygen", sans-serif;
+  line-height: 1.4;
+  color: #333333;
+  letter-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #2767da;
+}
+
+strong {
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Heading style */
+h1 {
+  font-size: 40px;
+  line-height: 50px;
+}
+
+h2 {
+  font-size: 30px;
+  line-height: 38px;
+}
+
+h3 {
+  font-size: 24px;
+  line-height: 32px;
+}
+
+h4 {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 600;
+}
+
+h5 {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 600;
+}
+
+/* Vue Carousel */
+.carousel__prev,
+.carousel__next {
+  background-color: #06c8aa !important;
+  -webkit-box-sizing: content-box !important;
+          box-sizing: content-box !important;
+}
+
+.carousel__pagination {
+  margin-top: 10px;
+}
+
+.carousel__pagination .carousel__pagination-button {
+  background-color: transparent !important;
+  border: 1px solid #1A9CD9 !important;
+  width: 15px !important;
+  height: 15px;
+  border-radius: 100%;
+  padding: 0  !important;
+}
+
+.carousel__pagination .carousel__pagination-button.carousel__pagination-button--active {
+  background-color: #3eb2e8 !important;
+}
+
+/* Vue Carousel */
+/* Custom editor style */
+.tox-tinymce-aux {
+  z-index: 9999 !important;
+}
+
+/* Custom editor style */
+/* Button Style */
+.btn-primary {
+  background-color: #3d76de;
+  border-color: #3d76de;
+  color: #ffffff;
+  padding: 11px 25px 10px;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  line-height: 22px;
+  height: 40px;
+}
+
+.btn-primary:hover, .btn-primary:enabled:hover {
+  background-color: #225cc6;
+  border-color: #225cc6;
+  color: #ffffff;
+}
+
+.p-fileupload .p-button.p-fileupload-choose {
+  background-color: #2767da;
+  color: #ffffff;
+  border-color: #2767da;
+}
+
+/* Button Style */
+/* Animation */
+@-webkit-keyframes fadeIn {
+  0% {
+    top: 150%;
+  }
+  100% {
+    top: 125%;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    top: 150%;
+  }
+  100% {
+    top: 125%;
+  }
+}
+
+/* Animation */
+/*# sourceMappingURL=Global.css.map */

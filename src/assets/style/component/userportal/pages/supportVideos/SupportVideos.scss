@@ -1,0 +1,119 @@
+@import '../../../../Variable';
+
+.up_support_video{
+    h3{
+        font-size: $font-size + 4;
+        line-height: 1.6;
+        margin-bottom: $spacer-sm;
+    }
+    .up_sp_video_box{
+        cursor: pointer;
+
+        figure{
+            border: 1px solid #ddd;
+            padding: 0 20px;
+            height: 140px;
+            margin-bottom: $spacer-sm;
+            display: flex;
+            align-items: center;
+            pointer-events: none;
+            @media screen and (max-width: 640px) {
+                min-height: 140px;
+                overflow: hidden;
+                height: auto;
+            }
+
+            img{
+                max-width: 100%;
+                vertical-align: middle;
+            }  
+        }
+        h5{
+            font-size: 1.1rem;
+            line-height: 1.2;
+            color: #707070;
+            font-weight: 600;
+            text-align: center;
+            pointer-events: none;
+        }
+    }
+    table.up_website_creation{
+        width: 100%;
+        border-collapse: collapse;
+
+        tr{
+            border-bottom: 1px solid #5f9ae0;
+            td{
+                padding: $spacer-xs 0;
+                font-family: $font-family-tertiary;
+
+                code{
+                    padding: 2px 4px;
+                    font-size: 90%;
+                    color: #c7254e;
+                    background-color: #f9f2f4;
+                    border-radius: 4px;
+                }
+            }
+            td:first-child{
+                width: 8em;
+                word-break: break-all;
+                color: #186ed3;
+                text-transform: uppercase;
+                font-weight: 600;
+                font-size: 14px;
+            }
+
+            &:last-child{
+                border-bottom: 0;
+            }
+        }
+    }
+}
+
+.up_video_content{
+    video{
+        max-width: 100%;
+    }
+}
+.up_support_video{
+    .up_main_container{
+        .up_inner_container{
+            .p-col-5.up_sp_faq{
+                @media screen and (max-width: 991px) {
+                    width: 49.15%;
+                }
+                @media screen and (max-width: 780px) {
+                    width: 100%;
+                }
+                
+            }
+            .p-col-7.up_sp_videos{
+                @media screen and (max-width: 991px) {
+                    width: 49.15%;
+                }
+                @media screen and (max-width: 780px) {
+                    width: 100%;
+                }
+
+                .p-grid{
+                    .p-col-4{
+                        @media screen and (max-width: 991px) {
+                            width: 49.15%;
+                        }
+                        @media screen and (max-width: 780px) {
+                            width: 33.3333%;
+                        }
+                        @media screen and (max-width: 640px) {
+                            width: 49.15%;
+                        }
+                        @media screen and (max-width: 480px) {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
+}

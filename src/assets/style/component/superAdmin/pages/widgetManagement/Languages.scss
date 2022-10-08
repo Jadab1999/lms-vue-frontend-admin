@@ -1,0 +1,19 @@
+@import '../../../../Variable.scss';
+
+.sup_country_flag{
+    img{
+        width: 21px;
+    }
+}
+
+.sup_language_info{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    img{
+        max-width: 24px;
+        margin-right: $spacer-xs;
+        height: 15px;
+    }
+}

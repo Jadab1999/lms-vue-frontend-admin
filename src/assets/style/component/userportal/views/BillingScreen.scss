@@ -1,0 +1,61 @@
+.up_card_dectect{
+    position: relative;
+    figure{
+        display: block;
+        position: absolute;
+        width: 38px;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 7px;
+        img{
+            display: block;
+        }
+    }
+    .p-inputmask{
+        padding-right: 40px;
+    }
+}
+
+.up_cvv_wrap{
+    position: relative;
+    img{
+        position: absolute;
+        width: 38px;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 7px;
+    }
+}
+.sup_icon_container{
+    display: none;
+}
+
+.loading .sup_icon_container{
+    display: block;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    background-color: rgba(208, 208, 208, 0.8);
+    border-radius: 6px;
+
+    i{
+        color: #fff;
+    }
+}
+.btn-align-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    span {
+        flex: 0 0 auto!important;
+    }
+}
+.p-button-label {
+    flex: 0 0 auto!important;
+}

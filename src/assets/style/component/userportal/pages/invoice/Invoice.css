@@ -1,0 +1,824 @@
+.text-danger {
+  color: #e60017 !important;
+}
+
+.text-success {
+  color: #0dbb4d !important;
+}
+
+.text-warning {
+  color: #ffaa05 !important;
+}
+
+.text-primary {
+  color: #2767da !important;
+}
+
+.text-secondary {
+  color: #06c8aa !important;
+}
+
+.text-white {
+  color: #ffffff !important;
+}
+
+.text-black {
+  color: #000000 !important;
+}
+
+.bg-danger {
+  background-color: #e60017 !important;
+}
+
+.bg-success {
+  background-color: #0dbb4d !important;
+}
+
+.bg-warning {
+  background-color: #ffaa05 !important;
+}
+
+.bg-primary {
+  background-color: #2767da !important;
+}
+
+.bg-secondary {
+  background-color: #06c8aa !important;
+}
+
+.bg-white {
+  background-color: #ffffff !important;
+}
+
+.bg-black {
+  background-color: #000000 !important;
+}
+
+.up_payment_total {
+  padding: 20px 30px;
+  background: white;
+  -webkit-box-shadow: 0 3px 12px -3px #0003;
+          box-shadow: 0 3px 12px -3px #0003;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  width: 500px;
+  max-width: 50%;
+  margin-top: 30px;
+  margin-left: auto;
+}
+
+.up_payment_total h3 {
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.up_payment_total table {
+  width: 100%;
+  border-spacing: 0;
+}
+
+.up_payment_total table tbody tr > td {
+  text-align: left;
+  padding: 5px 10px;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.up_payment_total table tbody tr > td:first-child {
+  border-right: 1px solid #d1d1d1;
+}
+
+.up_payment_total table tbody tr > td:last-child {
+  text-align: right;
+}
+
+.up_payment_total table tbody tr.discount-row {
+  background-color: #c1fbc1f2;
+  color: #313131;
+}
+
+.up_payment_total table tbody tr.discount-row > td .discount-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.up_payment_total table tbody tr.discount-row > td .discount-box i.pi {
+  margin-right: 10px;
+  margin-top: 5px;
+  color: #0a7f0a;
+}
+
+.up_payment_total table tbody tr.discount-row > td .discount-box span {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 600;
+  display: block;
+  text-transform: capitalize;
+}
+
+.up_payment_total table tbody tr.discount-row > td .discount-box small {
+  line-height: 14px;
+  display: block;
+  text-transform: capitalize;
+  font-weight: 400;
+}
+
+.up_payment_total table tbody tr.discount-row > td:first-child {
+  border-right: 1px solid #9bc09b;
+}
+
+.up_payment_total table tbody tr.discount-row > td:last-child {
+  padding: 0 6px;
+}
+
+.up_payment_total table tfoot.total tr > th {
+  border-top: 1px solid #bebebe;
+  text-align: left;
+  padding: 5px 10px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.up_payment_total table tfoot.total tr > td {
+  border-top: 1px solid #bebebe;
+  text-align: right;
+  padding: 5px 10px;
+  font-weight: 700;
+}
+
+/* Table item status */
+.up_item_free_status {
+  padding: 2px 8px;
+  border-radius: 3px;
+  font-size: 13px;
+  line-height: 1.5;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80px;
+  max-width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.up_item_free_status.up_item_free_status_info {
+  background: transparent;
+  border: 1px solid #1A9CD9;
+  color: #1A9CD9;
+}
+
+.up_item_free_status.up_item_free_status_success {
+  background: transparent;
+  border: 1px solid #0dbb4d;
+  color: #0dbb4d;
+}
+
+.up_item_free_status i.pi {
+  font-size: 11px;
+  font-weight: 600;
+  margin-right: 4px;
+}
+
+/* Table item status */
+/* New Card design implement */
+.up_payment_method {
+  margin-top: 35px;
+}
+
+.up_payment_method .new_cardtype_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 30px -15px;
+}
+
+.up_payment_method .new_cardtype_list.loading {
+  position: relative;
+}
+
+.up_payment_method .new_cardtype_list.loading::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+.up_payment_method .new_cardtype_list.loading::after {
+  content: "\e926";
+  position: absolute;
+  -webkit-animation: fa-spin 2s linear infinite;
+  animation: fa-spin 2s linear infinite;
+  font-family: primeicons;
+  speak: none;
+  font-style: normal;
+  font-weight: 400;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  display: inline-block;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  z-index: 3;
+  font-size: 20px;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.up_payment_method .new_cardtype_list .new_single_card {
+  width: 25%;
+  max-width: 25%;
+  padding: 0 10px;
+  margin: 0 0 35px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.up_payment_method .new_cardtype_list .new_single_card .card_inner_details {
+  border-radius: 22px;
+  -webkit-box-shadow: 0 3px 12px -3px black;
+          box-shadow: 0 3px 12px -3px black;
+  min-height: 120px;
+  height: 212px;
+  padding: 28px 25px;
+  margin: 0 5px;
+  width: 100%;
+}
+
+.up_payment_method .new_cardtype_list .new_single_card .card_inner_details .add_card_type {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 0 15px 0;
+}
+
+.up_payment_method .new_cardtype_list .new_single_card .card_inner_details .add_card_type .right {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.up_payment_method .new_cardtype_list .new_single_card .card_inner_details .card-chip {
+  margin: 0 0 10px 0;
+}
+
+.up_payment_method .new_cardtype_list .new_single_card .card_inner_details .card-chip img {
+  width: 52px;
+}
+
+.up_payment_method .new_cardtype_list .new_single_card .card_inner_details.visa-bg-wrapper {
+  background: #005489;
+  background: linear-gradient(22deg, #005489 0%, #2ba4cf 100%);
+  color: #fff;
+}
+
+.up_payment_method .new_cardtype_list .new_single_card .card_inner_details.visa-bg-wrapper .card-number-new {
+  font-size: 18px;
+  text-shadow: 2px 2px #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 0 5px 0;
+}
+
+.up_payment_method .new_cardtype_list .new_single_card .card_inner_details.visa-bg-wrapper .card-number-new span {
+  font-size: 22px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  line-height: 0;
+  margin: 0 11px -12px 0;
+}
+
+.up_payment_method .new_cardtype_list .new_single_card .card_inner_details.visa-bg-wrapper .card-with-auth-name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  margin: 15px 0 0 0;
+}
+
+.up_payment_method .new_cardtype_list .new_single_card .card_inner_details.visa-bg-wrapper .card-with-auth-name .cardholder-nameauth {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.up_payment_method .new_cardtype_list .new_single_card .card_inner_details.visa-bg-wrapper .card-with-auth-name .card-validity {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.up_payment_method .new_cardtype_list .new_single_card .card_inner_details.visa-bg-wrapper .card-with-auth-name .card-validity .heading {
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 12px;
+}
+
+.up_payment_method .new_cardtype_list .new_single_card .card_inner_details.visa-bg-wrapper .card-with-auth-name .card-validity .validity-data {
+  color: #fff;
+  font-size: 16px;
+}
+
+.up_payment_method .new_cardtype_list .new_single_card .card_inner_details.visa-bg-wrapper .card-with-auth-name .card-validity .validity-data .valid-heading {
+  font-size: 12px;
+  text-transform: uppercase;
+  margin: 0 5px 0 0;
+}
+
+.up_payment_method .new_cardtype_list .new_single_card .card_inner_details.master-card-wrapper {
+  background: #ced4d9;
+  background: linear-gradient(22deg, #ced4d9 0%, #ecf2f5 100%);
+  color: #000;
+}
+
+.up_payment_method .new_cardtype_list .new_single_card .card_inner_details.master-card-wrapper .card-number-new {
+  font-size: 18px;
+  text-shadow: 2px 2px #b3b3b3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 0 5px 0;
+}
+
+.up_payment_method .new_cardtype_list .new_single_card .card_inner_details.master-card-wrapper .card-number-new .cardholder-nameauth {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.up_payment_method .new_cardtype_list .new_single_card .card_inner_details.master-card-wrapper .card-number-new span {
+  font-size: 22px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  line-height: 0;
+  margin: 0 11px -12px 0;
+}
+
+.up_payment_method .new_cardtype_list .new_single_card .card_inner_details.master-card-wrapper .card-with-auth-name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #000;
+  margin: 15px 0 0 0;
+}
+
+.up_payment_method .new_cardtype_list .new_single_card .card_inner_details.master-card-wrapper .card-with-auth-name .cardholder-nameauth {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.up_payment_method .new_cardtype_list .new_single_card .card_inner_details.master-card-wrapper .card-with-auth-name .card-validity {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.up_payment_method .new_cardtype_list .new_single_card .card_inner_details.master-card-wrapper .card-with-auth-name .card-validity .heading {
+  text-transform: uppercase;
+  color: #2e2e2e;
+  font-size: 12px;
+}
+
+.up_payment_method .new_cardtype_list .new_single_card .card_inner_details.master-card-wrapper .card-with-auth-name .card-validity .validity-data {
+  color: #000;
+  font-size: 16px;
+}
+
+.up_payment_method .new_cardtype_list .new_single_card .card_inner_details.master-card-wrapper .card-with-auth-name .card-validity .validity-data .valid-heading {
+  font-size: 12px;
+  text-transform: uppercase;
+  margin: 0 5px 0 0;
+}
+
+.up_payment_method .new_cardtype_list .new_single_card .card_inner_details.amex-wrapper {
+  background: #1196b4;
+  background: linear-gradient(22deg, #1196b4 0%, #0ac7eb 100%);
+  color: #fff;
+}
+
+.up_payment_method .new_cardtype_list .new_single_card .card_inner_details.amex-wrapper .card-number-new {
+  font-size: 18px;
+  text-shadow: 2px 2px #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 0 5px 0;
+}
+
+.up_payment_method .new_cardtype_list .new_single_card .card_inner_details.amex-wrapper .card-number-new span {
+  font-size: 22px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  line-height: 0;
+  margin: 0 11px -12px 0;
+}
+
+.up_payment_method .new_cardtype_list .new_single_card .card_inner_details.amex-wrapper .card-with-auth-name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  margin: 15px 0 0 0;
+}
+
+.up_payment_method .new_cardtype_list .new_single_card .card_inner_details.amex-wrapper .card-with-auth-name .cardholder-nameauth {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.up_payment_method .new_cardtype_list .new_single_card .card_inner_details.amex-wrapper .card-with-auth-name .card-validity {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.up_payment_method .new_cardtype_list .new_single_card .card_inner_details.amex-wrapper .card-with-auth-name .card-validity .heading {
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 12px;
+}
+
+.up_payment_method .new_cardtype_list .new_single_card .card_inner_details.amex-wrapper .card-with-auth-name .card-validity .validity-data {
+  color: #fff;
+  font-size: 16px;
+}
+
+.up_payment_method .new_cardtype_list .new_single_card .card_inner_details.amex-wrapper .card-with-auth-name .card-validity .validity-data .valid-heading {
+  font-size: 12px;
+  text-transform: uppercase;
+  margin: 0 5px 0 0;
+}
+
+.up_payment_method .new_cardtype_list .new_single_card .card_inner_details.up_card_selected {
+  -webkit-box-shadow: 0 2px 22px -3px #858585;
+          box-shadow: 0 2px 22px -3px #858585;
+  border: 1px solid #969696;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.up_payment_method .new_cardtype_list .new_single_card.up_card_selected_wrapper .card_inner_details {
+  border-radius: 22px;
+  -webkit-box-shadow: 0 3px 12px -3px black;
+          box-shadow: 0 3px 12px -3px black;
+  min-height: 120px;
+  height: 232px;
+  padding: 28px 35px;
+  margin: 0 22px;
+  width: 100%;
+}
+
+.up_payment_method .new_cardtype_list .new_single_card.up_card_selected_wrapper .card_inner_details .add_card_type {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 0 15px 0;
+}
+
+.up_payment_method .new_cardtype_list .new_single_card.up_card_selected_wrapper .card_inner_details .add_card_type .right {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.up_payment_method .new_cardtype_list .new_single_card.up_card_selected_wrapper .card_inner_details .card-chip {
+  margin: 0 0 10px 0;
+}
+
+.up_payment_method .new_cardtype_list .new_single_card.up_card_selected_wrapper .card_inner_details .card-chip img {
+  width: 52px;
+}
+
+.up_payment_method .new_cardtype_list .new_single_card.up_card_selected_wrapper .card_inner_details.visa-bg-wrapper {
+  background: #005489;
+  background: linear-gradient(22deg, #005489 0%, #2ba4cf 100%);
+  color: #fff;
+}
+
+.up_payment_method .new_cardtype_list .new_single_card.up_card_selected_wrapper .card_inner_details.visa-bg-wrapper .card-number-new {
+  font-size: 20px;
+  text-shadow: 2px 2px #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 0 5px 0;
+}
+
+.up_payment_method .new_cardtype_list .new_single_card.up_card_selected_wrapper .card_inner_details.visa-bg-wrapper .card-number-new span {
+  font-size: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  line-height: 0;
+  margin: 0 11px -12px 0;
+}
+
+.up_payment_method .new_cardtype_list .new_single_card.up_card_selected_wrapper .card_inner_details.visa-bg-wrapper .card-with-auth-name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  margin: 16px 0 0 0;
+}
+
+.up_payment_method .new_cardtype_list .new_single_card.up_card_selected_wrapper .card_inner_details.visa-bg-wrapper .card-with-auth-name .cardholder-nameauth {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.up_payment_method .new_cardtype_list .new_single_card.up_card_selected_wrapper .card_inner_details.visa-bg-wrapper .card-with-auth-name .card-validity {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.up_payment_method .new_cardtype_list .new_single_card.up_card_selected_wrapper .card_inner_details.visa-bg-wrapper .card-with-auth-name .card-validity .heading {
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 12px;
+}
+
+.up_payment_method .new_cardtype_list .new_single_card.up_card_selected_wrapper .card_inner_details.visa-bg-wrapper .card-with-auth-name .card-validity .validity-data {
+  color: #fff;
+  font-size: 18px;
+}
+
+.up_payment_method .new_cardtype_list .new_single_card.up_card_selected_wrapper .card_inner_details.visa-bg-wrapper .card-with-auth-name .card-validity .validity-data .valid-heading {
+  font-size: 12px;
+  text-transform: uppercase;
+  margin: 0 5px 0 0;
+}
+
+.up_payment_method .new_cardtype_list .new_single_card.up_card_selected_wrapper .card_inner_details.master-card-wrapper {
+  background: #ced4d9;
+  background: linear-gradient(22deg, #ced4d9 0%, #ecf2f5 100%);
+  color: #000;
+}
+
+.up_payment_method .new_cardtype_list .new_single_card.up_card_selected_wrapper .card_inner_details.master-card-wrapper .card-number-new {
+  font-size: 20px;
+  text-shadow: 2px 2px #b3b3b3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 0 5px 0;
+}
+
+.up_payment_method .new_cardtype_list .new_single_card.up_card_selected_wrapper .card_inner_details.master-card-wrapper .card-number-new .cardholder-nameauth {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.up_payment_method .new_cardtype_list .new_single_card.up_card_selected_wrapper .card_inner_details.master-card-wrapper .card-number-new span {
+  font-size: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  line-height: 0;
+  margin: 0 11px -12px 0;
+}
+
+.up_payment_method .new_cardtype_list .new_single_card.up_card_selected_wrapper .card_inner_details.master-card-wrapper .card-with-auth-name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #000;
+  margin: 16px 0 0 0;
+}
+
+.up_payment_method .new_cardtype_list .new_single_card.up_card_selected_wrapper .card_inner_details.master-card-wrapper .card-with-auth-name .cardholder-nameauth {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.up_payment_method .new_cardtype_list .new_single_card.up_card_selected_wrapper .card_inner_details.master-card-wrapper .card-with-auth-name .card-validity {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.up_payment_method .new_cardtype_list .new_single_card.up_card_selected_wrapper .card_inner_details.master-card-wrapper .card-with-auth-name .card-validity .heading {
+  text-transform: uppercase;
+  color: #2e2e2e;
+  font-size: 12px;
+}
+
+.up_payment_method .new_cardtype_list .new_single_card.up_card_selected_wrapper .card_inner_details.master-card-wrapper .card-with-auth-name .card-validity .validity-data {
+  color: #000;
+  font-size: 18px;
+}
+
+.up_payment_method .new_cardtype_list .new_single_card.up_card_selected_wrapper .card_inner_details.master-card-wrapper .card-with-auth-name .card-validity .validity-data .valid-heading {
+  font-size: 12px;
+  text-transform: uppercase;
+  margin: 0 5px 0 0;
+}
+
+.up_payment_method .new_cardtype_list .new_single_card.up_card_selected_wrapper .card_inner_details.amex-wrapper {
+  background: #1196b4;
+  background: linear-gradient(22deg, #1196b4 0%, #0ac7eb 100%);
+  color: #fff;
+}
+
+.up_payment_method .new_cardtype_list .new_single_card.up_card_selected_wrapper .card_inner_details.amex-wrapper .card-number-new {
+  font-size: 20px;
+  text-shadow: 2px 2px #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 0 5px 0;
+}
+
+.up_payment_method .new_cardtype_list .new_single_card.up_card_selected_wrapper .card_inner_details.amex-wrapper .card-number-new span {
+  font-size: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  line-height: 0;
+  margin: 0 11px -12px 0;
+}
+
+.up_payment_method .new_cardtype_list .new_single_card.up_card_selected_wrapper .card_inner_details.amex-wrapper .card-with-auth-name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  margin: 16px 0 0 0;
+}
+
+.up_payment_method .new_cardtype_list .new_single_card.up_card_selected_wrapper .card_inner_details.amex-wrapper .card-with-auth-name .cardholder-nameauth {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.up_payment_method .new_cardtype_list .new_single_card.up_card_selected_wrapper .card_inner_details.amex-wrapper .card-with-auth-name .card-validity {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.up_payment_method .new_cardtype_list .new_single_card.up_card_selected_wrapper .card_inner_details.amex-wrapper .card-with-auth-name .card-validity .heading {
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 12px;
+}
+
+.up_payment_method .new_cardtype_list .new_single_card.up_card_selected_wrapper .card_inner_details.amex-wrapper .card-with-auth-name .card-validity .validity-data {
+  color: #fff;
+  font-size: 18px;
+}
+
+.up_payment_method .new_cardtype_list .new_single_card.up_card_selected_wrapper .card_inner_details.amex-wrapper .card-with-auth-name .card-validity .validity-data .valid-heading {
+  font-size: 12px;
+  text-transform: uppercase;
+  margin: 0 5px 0 0;
+}
+
+.up_payment_method .new_cardtype_list .new_single_card.up_card_selected_wrapper .card_inner_details.up_card_selected {
+  -webkit-box-shadow: 0 2px 22px -3px #858585;
+          box-shadow: 0 2px 22px -3px #858585;
+  border: 1px solid #969696;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+/*# sourceMappingURL=Invoice.css.map */

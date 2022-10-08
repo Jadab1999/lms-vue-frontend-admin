@@ -1,0 +1,197 @@
+.text-danger {
+  color: #e60017 !important;
+}
+
+.text-success {
+  color: #0dbb4d !important;
+}
+
+.text-warning {
+  color: #ffaa05 !important;
+}
+
+.text-primary {
+  color: #2767da !important;
+}
+
+.text-secondary {
+  color: #06c8aa !important;
+}
+
+.text-white {
+  color: #ffffff !important;
+}
+
+.text-black {
+  color: #000000 !important;
+}
+
+.bg-danger {
+  background-color: #e60017 !important;
+}
+
+.bg-success {
+  background-color: #0dbb4d !important;
+}
+
+.bg-warning {
+  background-color: #ffaa05 !important;
+}
+
+.bg-primary {
+  background-color: #2767da !important;
+}
+
+.bg-secondary {
+  background-color: #06c8aa !important;
+}
+
+.bg-white {
+  background-color: #ffffff !important;
+}
+
+.bg-black {
+  background-color: #000000 !important;
+}
+
+.language_status {
+  padding: 0 6px;
+  border-radius: 5px;
+  font-size: 13px;
+  line-height: 1.5;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.language_status.language_status_danger {
+  background-color: #ffcdd2;
+  color: #9a000f;
+}
+
+.language_status.language_status_success {
+  background-color: #b4facd;
+  color: #087330;
+}
+
+.language_status i.pi {
+  font-size: 11px;
+  font-weight: 600;
+  margin-right: 4px;
+}
+
+.sup_translation_wrap .sup_translation_col {
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  padding: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.sup_translation_wrap .sup_translation_col .sup_language_name {
+  font-size: 14px;
+  line-height: 1.4;
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+  color: #4d4d4d;
+  margin-bottom: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.sup_translation_wrap .sup_translation_col .sup_language_name .sup_language_flag {
+  padding-right: 5px;
+}
+
+.sup_translation_wrap .sup_translation_col .sup_language_name .sup_language_flag img {
+  width: 26px;
+}
+
+.sup_translation_wrap .sup_translation_col .sup_language_value {
+  font-size: 16px;
+  line-height: 1.4;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: #000000;
+}
+
+.sup_translation_wrap .sup_translation_col .sup_language_updatedon {
+  font-size: 11px;
+  line-height: 1.4;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+  color: #737373;
+}
+
+.sup_translation_wrap .sup_translation_col .sup_language_updatedon::before {
+  content: '|';
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.sup_translation_wrap .sup_translation_col .sup_language_updatedon strong {
+  font-weight: 600;
+}
+
+.sup_translation_wrap .sup_translation_col .sup_language_edit {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  cursor: pointer;
+  background-color: transparent;
+  width: 25px;
+  height: 25px;
+  border-radius: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: background-color 0.5s ease-in-out;
+  transition: background-color 0.5s ease-in-out;
+}
+
+.sup_translation_wrap .sup_translation_col .sup_language_edit i.pi {
+  font-size: 12px;
+  color: #2767da;
+  font-weight: 600;
+  pointer-events: none;
+}
+
+.sup_translation_wrap .sup_translation_col .sup_language_edit:hover {
+  background-color: #bbcff3;
+}
+
+.sup_translation_wrap .sup_translation_col .sup_language_edit_area.sup_hide_edit {
+  display: none;
+}
+
+.sup_translation_wrap .sup_translation_col .sup_language_edit_area.sup_show_edit {
+  display: block;
+}
+
+.sup_translation_wrap .sup_translation_col .sup_language_edit_area.sup_show_edit ~ .sup_language_view_area {
+  display: none;
+}
+
+.sup_translation_wrap .sup_translation_col .sup_language_edit_area .p-field {
+  margin-bottom: 0;
+}
+/*# sourceMappingURL=LanguageText.css.map */

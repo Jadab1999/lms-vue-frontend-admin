@@ -1,0 +1,229 @@
+.text-danger {
+  color: #e60017 !important;
+}
+
+.text-success {
+  color: #0dbb4d !important;
+}
+
+.text-warning {
+  color: #ffaa05 !important;
+}
+
+.text-primary {
+  color: #2767da !important;
+}
+
+.text-secondary {
+  color: #06c8aa !important;
+}
+
+.text-white {
+  color: #ffffff !important;
+}
+
+.text-black {
+  color: #000000 !important;
+}
+
+.bg-danger {
+  background-color: #e60017 !important;
+}
+
+.bg-success {
+  background-color: #0dbb4d !important;
+}
+
+.bg-warning {
+  background-color: #ffaa05 !important;
+}
+
+.bg-primary {
+  background-color: #2767da !important;
+}
+
+.bg-secondary {
+  background-color: #06c8aa !important;
+}
+
+.bg-white {
+  background-color: #ffffff !important;
+}
+
+.bg-black {
+  background-color: #000000 !important;
+}
+
+.sup_login_container {
+  background: #f3f7ff url("https://console.staging.truabilities.com/assets/dist/img/bg-graphic.svg") no-repeat center center/auto 98%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 100vh;
+  padding: 15px 0;
+}
+
+.sup_login_container .sup_login_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #fff;
+  border-radius: 7px;
+  overflow: hidden;
+  width: 850px;
+  max-width: calc(100% - 30px);
+  -webkit-filter: drop-shadow(0 0 2px rgba(125, 141, 148, 0.5));
+          filter: drop-shadow(0 0 2px rgba(125, 141, 148, 0.5));
+}
+
+.sup_login_container .sup_login_box .sup_left {
+  max-width: 360px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  padding: 30px 60px 30px 30px;
+  text-align: center;
+}
+
+.sup_login_container .sup_login_box .sup_left .sup_graphic {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-position: top right;
+     object-position: top right;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.sup_login_container .sup_login_box .sup_left h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+  line-height: 50px;
+  font-weight: 700;
+  color: #e8f4fe;
+  text-transform: uppercase;
+  margin: 0;
+  position: relative;
+  z-index: 2;
+}
+
+.sup_login_container .sup_login_box .sup_right {
+  width: 100%;
+  max-width: calc(100% - 360px);
+  padding: 80px 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sup_login_container .sup_login_box .sup_right .logo {
+  width: 100%;
+  max-width: 330px;
+  display: inline-block;
+  margin-bottom: 30px;
+}
+
+.sup_login_container .sup_login_box .sup_right .logo img {
+  max-width: 100%;
+}
+
+.sup_login_container .sup_login_box .sup_right .p-grid {
+  width: 100%;
+}
+
+.sup_login_container .sup_login_box .sup_right form label {
+  color: #595959;
+  font-weight: 700;
+  font-family: "Oxygen", sans-serif;
+}
+
+.sup_login_container .sup_login_box .sup_right form input {
+  border: 0;
+  border-bottom: 1px solid #d2d6de;
+  border-radius: 0;
+}
+
+.sup_login_container .sup_login_box .sup_right form input.error {
+  border-bottom-color: #e60017;
+}
+
+.sup_login_container .sup_login_box .sup_right form input.sucess {
+  border-bottom-color: #0dbb4d;
+}
+
+.sup_login_container .sup_login_box .sup_right form button.p-button {
+  width: auto;
+}
+
+.sup_login_container .sup_login_box .sup_right .sup_submit_btn {
+  position: relative;
+}
+
+.sup_login_container .sup_login_box .sup_right .sup_submit_btn .sup_icon_container {
+  display: none;
+}
+
+.sup_login_container .sup_login_box .sup_right .sup_submit_btn.loading .sup_icon_container {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 1;
+  background-color: rgba(208, 208, 208, 0.8);
+}
+
+.sup_login_container .sup_login_box .sup_right .sup_submit_btn.loading .sup_icon_container i {
+  color: #fff;
+}
+
+.sup_login_container .sup_login_box .sup_right a.forget-pasword {
+  font-size: 14px;
+  font-weight: 700;
+  color: #222;
+  text-transform: uppercase;
+  font-family: "Oxygen", sans-serif;
+  text-decoration: none;
+}
+
+.sup_login_container .sup_login_box .sup_right a.forget-pasword:hover {
+  color: #06c8aa;
+}
+
+.sup_login_massage {
+  font-size: 14px;
+}
+/*# sourceMappingURL=Login.css.map */

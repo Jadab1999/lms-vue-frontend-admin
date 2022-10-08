@@ -1,0 +1,61 @@
+@import '../../../../Variable';
+
+.sup_settings_form{
+    position: relative;
+
+    .card{
+        margin-bottom: $spacer + 5;
+        background-color: rgba($light-gray, 0.6);
+        border: 1px solid $border-color;
+        border-radius: 10px;
+        padding: $spacer;
+
+        h3{
+            margin-bottom: $spacer - 5;
+        }
+
+        .p-inputswitch{
+            vertical-align: middle;
+        }
+
+        .sup_payment_mthod{
+            vertical-align: middle;
+            margin-left: $spacer-sm;
+            background-color: $primary;
+            border-radius: 3px;
+            padding: $spacer-xs - 1 $spacer-sm;
+            color: $white;
+            font-size: $font-size - 2;
+            line-height: 1;
+            font-weight: 600;
+        }
+
+        .sup_deployment_status{
+            vertical-align: middle;
+            margin-left: $spacer-sm;
+            background-color: $primary;
+            border-radius: 3px;
+            padding: $spacer-xs - 1 $spacer-sm;
+            color: $white;
+            font-size: $font-size - 2;
+            line-height: 1;
+            font-weight: 600;
+        }
+    }
+
+    .sup_settings_loading{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba($white, 0.5);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        i.pi{
+            font-size: $font-size * 2.5;
+        }
+    }
+}

@@ -1,0 +1,80 @@
+@import '../../../../Variable';
+
+
+.up_profile_container{
+    width: 100%;
+    max-width: 1024px;
+    margin: $spacer*2 auto;
+    background: transparent;
+    padding: $spacer + 10;
+    box-shadow: 0 3px 12px -3px #0003;
+    border-radius: 5px;
+
+    @media screen and (max-width: 680px) {
+        margin:  $spacer auto $spacer*2 auto;
+    }
+
+    &.loading{
+        position: relative;
+        &::before{
+            content: "\e926";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            font-size: $spacer*2;
+            -webkit-animation: fa-spin 2s linear infinite;
+            animation: fa-spin 2s linear infinite;
+            font-family: primeicons;
+            font-style: normal;
+            font-weight: 400;
+            font-variant: normal;
+            text-transform: none;
+            line-height: 1;
+            display: inline-block;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            z-index: 2;
+        }
+        &::after{
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: rgba($white, 0.7);
+            left: 0;
+            top: 0;
+            z-index: 1;
+        }
+    }
+
+    .up_profile_icon{
+        figure{
+            display: block;
+            margin-right: 30px;
+            flex-shrink: 0;
+
+            img{
+                width: 150px;
+                height: 150px;
+                border-radius: 100%;
+                display: block;
+                border: 2px solid $border-color;
+            }
+        }
+        .up_profile_upload{
+            small{
+                font-style: italic;
+            }
+        }
+    }
+}
+.p-formgrid{
+    .p-col {        
+        @media screen and (max-width: 680px) {
+            flex-basis: unset;
+            padding: 0 0.5rem;
+            width: 100%;
+        }
+    }
+    
+}

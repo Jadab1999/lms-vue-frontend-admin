@@ -1,0 +1,101 @@
+.text-danger {
+  color: #e60017 !important;
+}
+
+.text-success {
+  color: #0dbb4d !important;
+}
+
+.text-warning {
+  color: #ffaa05 !important;
+}
+
+.text-primary {
+  color: #2767da !important;
+}
+
+.text-secondary {
+  color: #06c8aa !important;
+}
+
+.text-white {
+  color: #ffffff !important;
+}
+
+.text-black {
+  color: #000000 !important;
+}
+
+.bg-danger {
+  background-color: #e60017 !important;
+}
+
+.bg-success {
+  background-color: #0dbb4d !important;
+}
+
+.bg-warning {
+  background-color: #ffaa05 !important;
+}
+
+.bg-primary {
+  background-color: #2767da !important;
+}
+
+.bg-secondary {
+  background-color: #06c8aa !important;
+}
+
+.bg-white {
+  background-color: #ffffff !important;
+}
+
+.bg-black {
+  background-color: #000000 !important;
+}
+
+.sup_user_info {
+  margin-bottom: 0;
+  font-size: 15px;
+  border: 1px solid #e9ecef;
+  width: 100%;
+  text-align: left;
+  border-collapse: collapse;
+}
+
+.sup_user_info th, .sup_user_info td {
+  padding: 8px 10px;
+}
+
+.sup_user_info tr th {
+  width: 150px;
+  font-weight: 500;
+  color: #000000;
+}
+
+.sup_user_info tr:nth-child(odd) th, .sup_user_info tr:nth-child(odd) td {
+  background-color: #f2f2f2;
+}
+
+.sup_user_info strong {
+  display: block;
+  margin-bottom: 2px;
+}
+
+.sup_user_info .sup_user_status_badge {
+  color: #ffffff;
+  text-transform: capitalize;
+  font-weight: 500;
+  padding: 3px 5px;
+  font-size: 14px;
+  display: inline-block;
+}
+
+.sup_user_info .sup_user_status_badge.sup_badge_success {
+  background-color: #0dbb4d;
+}
+
+.sup_user_info .sup_user_status_badge.sup_badge_error {
+  background-color: #e60017;
+}
+/*# sourceMappingURL=UserList.css.map */

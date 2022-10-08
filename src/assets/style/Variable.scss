@@ -1,0 +1,60 @@
+// Colors
+$primary: #2767da !default;
+$secondary: #06c8aa !default;
+$tertiary: #3d76de !default;
+$success: #0dbb4d !default;
+$info: #1A9CD9 !default;
+$orange: #fd7b53 !default;
+$warning: #ffaa05 !default;
+$danger: #e60017 !default;
+$black: #000000 !default;
+$white: #ffffff !default;
+$gray: #cccccc!default;
+$body-text: #333333 !default;
+$border-color: #e3e3e3 !default;
+$link-text: $primary !default;
+$light-blue: #f3f7ff !default;
+$light-gray: #f5f5f5  !default;
+$theme-blue: #264bd8 !default;
+$theme-black: #27272a !default;
+$theme-blue-dropdown-bgc: #2754d3 !default;
+
+// BG Color
+$body-bg: $light-blue !default;
+
+
+// Font Family
+$font-family-primary: 'Oxygen', sans-serif;
+$font-family-secondary: 'Montserrat', sans-serif;
+$font-family-tertiary: 'Poppins', sans-serif;
+
+// Font Size
+$font-size: 16px;
+$font-weight: 400;
+$h1-font-size: 40px;
+$h2-font-size: 30px;
+$h3-font-size: 24px;
+$h4-font-size: 18px;
+$h5-font-size: 16px;
+
+// BG Image URL
+$General-bg-image-url: 'https://console.staging.truabilities.com/assets/dist/img/bg-graphic.svg' !default;
+
+// Spacing
+$spacer: 20px;
+$spacer-sm: 10px;
+$spacer-xs: 5px;
+
+$colors: ("danger": $danger, "success": $success, "warning": $warning, "primary": $primary, "secondary": $secondary, "white": $white, "black": $black);
+
+@each $key, $color in $colors {
+    .text-#{$key} {
+        color: #{$color} !important;
+    }
+}
+
+@each $key, $color in $colors {
+    .bg-#{$key} {
+        background-color: #{$color} !important;
+    }
+}

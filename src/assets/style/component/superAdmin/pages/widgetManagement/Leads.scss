@@ -1,0 +1,109 @@
+@import '../../../../Variable';
+
+.sup_website_url{
+    margin-left: $spacer-xs;
+
+    i.pi{
+        font-size: $font-size - 4;
+        font-weight: 600;
+    }
+}
+
+.lead_status{
+    padding: 0 $spacer-xs + 1;
+    border-radius: 5px;
+    font-size: $font-size - 3;
+    line-height: 1.5;
+    font-family: $font-family-secondary;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+
+    &.lead_status_danger{
+        background-color: lighten($danger, 45%);
+        color: darken($danger, 15%);
+    }
+    &.lead_status_success{
+        background-color: lighten($success, 45%);
+        color: darken($success, 15%);
+    }
+
+    i.pi{
+        font-size: $font-size - 5;
+        font-weight: 600;
+        margin-right: $spacer-xs - 1;
+    }
+}
+
+.sup_leads_info_inner{
+    border: 1px solid lighten($tertiary, 5%);
+    margin-bottom: 15px;
+    border-radius: 5px;
+
+    &:last-child{
+        margin-bottom: 0;
+    }
+
+    .sup_leads_info_title{
+        background-color: lighten($tertiary, 5%);
+        padding: $spacer-xs $spacer-sm;
+        font-family: $font-family-secondary;
+        font-size: $font-size + 2;
+        color: $white;
+        line-height: 1.4;
+        font-weight: 600;
+
+        i.pi{
+            margin-right: $spacer-xs;
+        }
+    }
+
+    ul{
+        padding: $spacer-sm $spacer-sm + 5;
+        list-style: none;
+
+        li{
+            font-size: $font-size - 1;
+            line-height: 1.2;
+            display: flex;
+            align-items: center;
+            margin-bottom: $spacer-sm;
+
+            strong{
+                flex-shrink: 0;
+                width: 120px;
+                text-align: left;
+                display: inline-block;
+                margin-right: 15px;
+                color: $body-text;
+                font-weight: 600;
+                font-family: $font-family-secondary;
+            }
+
+            .sup_copy_license{
+                max-width: 500px;
+            }
+        }
+
+        &.sup_qustn-answr{
+            li{
+                flex-wrap: wrap;
+
+                span.sup_qustn{
+                    display: block;
+                    width: 100%;
+                    margin-bottom: $spacer-xs;
+
+                    strong{
+                        width: 100%;
+                        margin: 0;
+                    }
+                }
+                span.sup_answr{
+                    display: block;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

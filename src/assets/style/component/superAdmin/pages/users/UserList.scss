@@ -1,0 +1,48 @@
+@import "../../../../Variable.scss";
+
+.sup_user_info{
+    margin-bottom: 0;
+    font-size: $font-size - 1;
+    border: 1px solid #e9ecef;
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+
+    th, td{
+        padding: 8px 10px;
+    }
+
+    tr th{
+        width: 150px;
+        font-weight: 500;
+        color: $black;
+    }
+        
+    tr:nth-child(odd) {
+
+        th, td{
+            background-color: lighten($black, 95%);
+        }
+    }
+
+    strong{
+        display: block;
+        margin-bottom: $spacer-xs - 3;
+    }
+
+    .sup_user_status_badge{
+        color: $white;
+        text-transform: capitalize;
+        font-weight: 500;
+        padding: $spacer-xs - 2 $spacer-xs;
+        font-size: $font-size - 2;
+        display: inline-block;
+
+        &.sup_badge_success{
+            background-color: $success;
+        }
+        &.sup_badge_error{
+            background-color: $danger;
+        }
+    }
+}

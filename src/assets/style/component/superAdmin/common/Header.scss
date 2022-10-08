@@ -1,0 +1,153 @@
+@import "../../../Variable.scss";
+
+.sup_header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: $spacer - 10 $spacer;
+    height: 70px;
+    //background-color: #ffffff;
+    position: relative;
+    z-index: 998;
+    //border-bottom: 1px solid #ebebeb;
+
+    button{
+        display: block;
+        cursor: pointer;
+    }
+
+    .sup_header_nav_wrap{
+        .sup_header_nav{
+            list-style-type: none;
+            display: flex;
+            align-items: center;
+
+            li{
+                padding: 0 4px;
+                
+                a{
+                    img{
+                        width: 25px;
+                    }
+                }
+
+
+                &.sup_user{
+                    position: relative;
+
+                    .sup_user_profile{
+                        display: flex;
+                        align-items: center;
+                        cursor: pointer;
+                        flex-direction: row-reverse;
+                        background-color: $white;
+                        border-radius: 10px;
+                        -webkit-box-shadow: 1px 1px 4px #00000030;
+                        box-shadow: 1px 1px 4px #00000030;
+                        margin-left: 10px;
+                        padding: $spacer-sm - 2 $spacer-sm;
+
+                        .sup_user_icon{
+                            width: 40px;
+                            height: 40px;
+                            border-radius: 100%;
+                            overflow: hidden;
+                            padding: 4px;
+                            margin-left: 10px;
+                            border: 1px solid $light-gray;
+                            overflow: hidden;
+
+                            img{
+                                border-radius: 100%; 
+                            }
+                        }
+
+                        .sup_user_info{
+                            user-select: none;
+                            span{
+                                font-size: $font-size - 3;
+                                line-height: 1.6;
+                                font-weight: 600;
+                                display: block;
+                                color: lighten($body-text, 30%);
+                            }
+
+                            h3.sup_user_name{
+                                font-size: 15px;
+                                line-height: 18px;
+                                font-weight: 600;
+                                font-family: $font-family-secondary;
+                            }
+                        }
+                    }                    
+                    .sup_user_dropdown_show{
+                        position: absolute;
+                        left: 0;
+                        top: 125%;
+                        background-color: $white;
+                        padding: $spacer-sm $spacer - 5;
+                        -webkit-box-shadow: 0 0 6px 0 rgba(0,0,0,.16);
+                        box-shadow: 2px 3px 6px 0 rgba(0,0,0,.16);
+                        width: 100%;
+                        animation: 0.8s fadeIn;
+                        border-radius: 5px;
+
+                        &::before{
+                            content: '';
+                            border-bottom: 9px solid darken($white, 10%);
+                            border-left: 9px solid transparent;
+                            border-right: 9px solid transparent;
+                            position: absolute;
+                            top: -10px;
+                            right: 20px;
+                        }
+                        &::after{
+                            content: '';
+                            border-bottom: 9px solid $white;
+                            border-left: 9px solid transparent;
+                            border-right: 9px solid transparent;
+                            position: absolute;
+                            top: -9px;
+                            right: 18px;
+                        }
+
+                        ul{
+                            list-style: none;
+
+                            li{
+                                border-bottom: 1px solid lighten($black, 85%);
+                                padding: 0;
+
+                                a{
+                                    padding: $spacer-sm $spacer-sm;
+                                    transition: 0.3s ease-in-out;
+                                    font-size: $font-size - 2;
+                                    font-weight: 500;
+                                    font-family: $font-family-secondary;
+                                    color: lighten($black, 10%);
+                                    display: flex;
+                                    align-items: center;
+                                    cursor: pointer;
+    
+                                    i{
+                                        font-size: $font-size + 1;
+                                        margin-right: 9px;
+                                    }
+
+                                    &:hover, &:focus{
+                                        background-color: lighten($black, 96%);
+                                        color: $primary;
+                                    }
+                                }
+
+                                &:last-child{
+                                    border-bottom: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

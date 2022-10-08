@@ -1,0 +1,27 @@
+@import '../../../../Variable';
+
+.up_violation_box{
+    background-color: #2b2a2a;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: $spacer;
+
+    &:last-child{
+        margin-bottom: 0;
+    }
+
+    h5{
+        color: $white;
+        font-size: $font-size;
+        line-height: 1.4;
+        font-weight: 600;
+        margin-bottom: $spacer-sm;
+    }
+
+    .up_violation_code_wrap{
+        background-color: #2885dd;
+        color: $white;
+        padding: 10px;
+        border-radius: 4px;
+    }
+}

@@ -1,0 +1,9 @@
+@import "../../../Variable.scss";
+
+.sup_footer{
+    background-color: $white;
+    border-top: 1px solid #ebebeb;
+    padding: $spacer - 10 $spacer;
+    height: 50px;
+    font-size: $font-size - 2;
+}

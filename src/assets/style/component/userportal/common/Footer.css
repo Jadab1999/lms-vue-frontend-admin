@@ -1,0 +1,123 @@
+.text-danger {
+  color: #e60017 !important;
+}
+
+.text-success {
+  color: #0dbb4d !important;
+}
+
+.text-warning {
+  color: #ffaa05 !important;
+}
+
+.text-primary {
+  color: #2767da !important;
+}
+
+.text-secondary {
+  color: #06c8aa !important;
+}
+
+.text-white {
+  color: #ffffff !important;
+}
+
+.text-black {
+  color: #000000 !important;
+}
+
+.bg-danger {
+  background-color: #e60017 !important;
+}
+
+.bg-success {
+  background-color: #0dbb4d !important;
+}
+
+.bg-warning {
+  background-color: #ffaa05 !important;
+}
+
+.bg-primary {
+  background-color: #2767da !important;
+}
+
+.bg-secondary {
+  background-color: #06c8aa !important;
+}
+
+.bg-white {
+  background-color: #ffffff !important;
+}
+
+.bg-black {
+  background-color: #000000 !important;
+}
+
+.up_main_footer {
+  background: #ffffff;
+  padding: 15px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  line-height: 1.4;
+  border-top: 2px solid #2767da;
+  text-align: center;
+}
+
+.up_main_footer .up_footer_menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 10px;
+}
+
+.up_main_footer .up_footer_menu .up_copywrite p {
+  font-weight: 500;
+  color: #000000;
+}
+
+.up_main_footer .up_footer_menu .up_footer_menu_wrap ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+  margin-left: 30px;
+}
+
+.up_main_footer .up_footer_menu .up_footer_menu_wrap ul li {
+  margin-right: 30px;
+}
+
+.up_main_footer .up_footer_menu .up_footer_menu_wrap ul li:last-child {
+  margin-right: 0;
+}
+
+.up_main_footer .up_footer_menu .up_footer_menu_wrap ul li a {
+  font-size: 12px;
+  line-height: 1.4;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  color: #000000;
+}
+
+.up_main_footer .up_footer_menu .up_footer_menu_wrap ul li a:hover {
+  color: #2767da;
+}
+/*# sourceMappingURL=Footer.css.map */

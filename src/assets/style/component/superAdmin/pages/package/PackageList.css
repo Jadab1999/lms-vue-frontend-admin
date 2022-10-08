@@ -1,0 +1,141 @@
+.text-danger {
+  color: #e60017 !important;
+}
+
+.text-success {
+  color: #0dbb4d !important;
+}
+
+.text-warning {
+  color: #ffaa05 !important;
+}
+
+.text-primary {
+  color: #2767da !important;
+}
+
+.text-secondary {
+  color: #06c8aa !important;
+}
+
+.text-white {
+  color: #ffffff !important;
+}
+
+.text-black {
+  color: #000000 !important;
+}
+
+.bg-danger {
+  background-color: #e60017 !important;
+}
+
+.bg-success {
+  background-color: #0dbb4d !important;
+}
+
+.bg-warning {
+  background-color: #ffaa05 !important;
+}
+
+.bg-primary {
+  background-color: #2767da !important;
+}
+
+.bg-secondary {
+  background-color: #06c8aa !important;
+}
+
+.bg-white {
+  background-color: #ffffff !important;
+}
+
+.bg-black {
+  background-color: #000000 !important;
+}
+
+.sub_package_status {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sub_package_status::before {
+  content: '';
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+  margin-right: 6px;
+  display: inline-block;
+}
+
+.sub_package_status.warning::before {
+  background-color: #ffaa05;
+}
+
+.sub_package_status.success::before {
+  background-color: #0dbb4d;
+}
+
+.sub_package_status.danger::before {
+  background-color: #e60017;
+}
+
+.sup_feature_given {
+  border-top: 1px solid #cecece;
+  border-bottom: 1px solid #cecece;
+  margin: 12px 0 0;
+  padding: 10px 0;
+}
+
+.sup_feature_given h4 {
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.4;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.sup_feature_given span {
+  font-size: 14px;
+  color: gray;
+}
+
+.sup_feature_given ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.sup_feature_given ul li {
+  border-radius: 5px;
+  padding: 4px 8px;
+  margin-right: 8px;
+  margin-bottom: 8px;
+  background-color: #3d76de;
+  color: #ffffff;
+  font-size: 12px;
+  line-height: 17px;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sup_feature_given ul li i.pi {
+  font-size: 12px;
+  margin-right: 5px;
+}
+/*# sourceMappingURL=PackageList.css.map */

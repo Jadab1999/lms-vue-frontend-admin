@@ -1,0 +1,27 @@
+@import '../../../../Variable';
+
+.language_key_status{
+    padding: 0 $spacer-xs + 1;
+    border-radius: 5px;
+    font-size: $font-size - 3;
+    line-height: 1.5;
+    font-family: $font-family-secondary;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+
+    &.language_key_status_danger{
+        background-color: lighten($danger, 45%);
+        color: darken($danger, 15%);
+    }
+    &.language_key_status_success{
+        background-color: lighten($success, 45%);
+        color: darken($success, 15%);
+    }
+
+    i.pi{
+        font-size: $font-size - 5;
+        font-weight: 600;
+        margin-right: $spacer-xs - 1;
+    }
+}

@@ -1,0 +1,268 @@
+.text-danger {
+  color: #e60017 !important;
+}
+
+.text-success {
+  color: #0dbb4d !important;
+}
+
+.text-warning {
+  color: #ffaa05 !important;
+}
+
+.text-primary {
+  color: #2767da !important;
+}
+
+.text-secondary {
+  color: #06c8aa !important;
+}
+
+.text-white {
+  color: #ffffff !important;
+}
+
+.text-black {
+  color: #000000 !important;
+}
+
+.bg-danger {
+  background-color: #e60017 !important;
+}
+
+.bg-success {
+  background-color: #0dbb4d !important;
+}
+
+.bg-warning {
+  background-color: #ffaa05 !important;
+}
+
+.bg-primary {
+  background-color: #2767da !important;
+}
+
+.bg-secondary {
+  background-color: #06c8aa !important;
+}
+
+.bg-white {
+  background-color: #ffffff !important;
+}
+
+.bg-black {
+  background-color: #000000 !important;
+}
+
+.up_login_container {
+  background: #e0eff5 url(https://console.staging.truabilities.com/assets/dist/img/bg-graphic.svg) no-repeat center center/auto 98%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 100vh;
+  padding: 15px 0;
+}
+
+.up_login_container.up_login_container_nobg {
+  background-image: none;
+  background-color: #fff;
+}
+
+.up_login_container .up_login_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #fff;
+  border-radius: 7px;
+  overflow: hidden;
+  width: 850px;
+  max-width: calc(100% - 30px);
+  -webkit-filter: drop-shadow(0 0 2px rgba(125, 141, 148, 0.5));
+          filter: drop-shadow(0 0 2px rgba(125, 141, 148, 0.5));
+}
+
+.up_login_container .up_login_box .up_left {
+  max-width: 360px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  padding: 30px 60px 30px 30px;
+  text-align: center;
+}
+
+.up_login_container .up_login_box .up_left .up_graphic {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-position: top right;
+     object-position: top right;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.up_login_container .up_login_box .up_left h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  color: #e8f4fe;
+  text-transform: uppercase;
+  margin: 0;
+  position: relative;
+  z-index: 2;
+}
+
+@media screen and (max-width: 680px) {
+  .up_login_container .up_login_box .up_left h1 {
+    font-size: 28px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .up_login_container .up_login_box .up_left {
+    max-width: 280px;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .up_login_container .up_login_box .up_left {
+    display: block;
+    max-width: 100%;
+    padding: 75px 30px 20px 30px;
+  }
+}
+
+.up_login_container .up_login_box .up_right {
+  width: 100%;
+  max-width: calc(100% - 360px);
+  padding: 80px 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.up_login_container .up_login_box .up_right .logo {
+  width: 100%;
+  max-width: 330px;
+  display: inline-block;
+  margin-bottom: 30px;
+}
+
+.up_login_container .up_login_box .up_right .logo img {
+  max-width: 100%;
+}
+
+.up_login_container .up_login_box .up_right .p-grid {
+  width: 100%;
+}
+
+.up_login_container .up_login_box .up_right form label {
+  color: #595959;
+  font-weight: 700;
+  font-family: 'Oxygen', sans-serif;
+}
+
+.up_login_container .up_login_box .up_right form input {
+  border: 0;
+  border-bottom: 1px solid #d2d6de;
+  border-radius: 0;
+}
+
+.up_login_container .up_login_box .up_right form button.p-button {
+  width: auto;
+}
+
+.up_login_container .up_login_box .up_right a.up_forget_pasword {
+  font-size: 14px;
+  font-weight: 700;
+  color: #222;
+  text-transform: uppercase;
+  font-family: 'Oxygen', sans-serif;
+  text-decoration: none;
+}
+
+.up_login_container .up_login_box .up_right a.up_forget_pasword:hover {
+  color: #06c8aa;
+}
+
+@media screen and (max-width: 840px) {
+  .up_login_container .up_login_box .up_right {
+    padding: 60px 35px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .up_login_container .up_login_box .up_right {
+    max-width: calc(100% - 280px);
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .up_login_container .up_login_box .up_right {
+    max-width: 100%;
+    width: 100%;
+    padding: 20px 30px 20px 30px;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .up_login_container .up_login_box {
+    max-width: 390px;
+    width: 100%;
+    margin: 0 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.up_login_container .up_login_massage, .up_login_container .up_form_massage {
+  padding: 8px;
+  font-size: 16px;
+  line-height: 1.3;
+  border-left: 6px  solid;
+  font-weight: 500;
+}
+
+.up_login_container .up_login_massage.error, .up_login_container .up_form_massage.error {
+  background-color: #ffdcdf;
+  border-color: #e60017;
+  color: #b30012;
+}
+
+.up_login_container .up_login_massage.success, .up_login_container .up_form_massage.success {
+  background-color: #c2fbd7;
+  border-color: #0dbb4d;
+  color: #0a8b39;
+}
+
+.sup_login_massage {
+  font-size: 14px;
+}
+/*# sourceMappingURL=Login.css.map */

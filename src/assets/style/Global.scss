@@ -1,0 +1,129 @@
+@import "./Variable.scss";
+//@import "./component/superAdmin/SuperAdmin.scss";
+@import "../../../node_modules/primevue/resources/primevue.min.css";
+@import "../../../node_modules/primevue/resources/themes/bootstrap4-light-blue/theme.css";
+@import "../../../node_modules/primevue/resources/themes/saga-blue/theme.css";
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-size: $font-size;
+    line-height: $font-size + 6;
+    font-family: $font-family-primary;
+    line-height: 1.4;
+    color: $body-text;
+    letter-spacing: 0;
+}
+
+a{
+    text-decoration: none;
+    color: $link-text;
+}
+
+strong{
+    font-weight: 600;
+    font-family: $font-family-secondary;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
+
+/* Heading style */
+h1{
+    font-size: $h1-font-size;
+    line-height: $h1-font-size + 10;
+}
+h2{
+    font-size: $h2-font-size;
+    line-height: $h2-font-size + 8;
+}
+h3{
+    font-size: $h3-font-size;
+    line-height: $h3-font-size + 8;
+}
+h4{
+    font-size: $h4-font-size;
+    line-height: $h4-font-size + 6;
+    font-weight: 600;
+}
+h5{
+    font-size: $h5-font-size;
+    line-height: $h5-font-size + 6;
+    font-weight: 600;
+}
+
+
+/* Vue Carousel */
+.carousel__prev,
+.carousel__next {
+    background-color: $secondary !important;
+    box-sizing: content-box !important;
+}
+.carousel__pagination{
+    margin-top: $spacer-sm;
+    .carousel__pagination-button{
+        background-color: transparent !important;
+        border: 1px solid $info !important;
+        width: 15px !important;
+        height: 15px;
+        border-radius: 100%;
+        padding: 0  !important;
+
+        &.carousel__pagination-button--active{
+            background-color: lighten($info, 10%) !important;
+        }
+    }
+}
+/* Vue Carousel */
+
+/* Custom editor style */
+.tox-tinymce-aux{
+    z-index: 9999 !important;
+}
+/* Custom editor style */
+
+/* Button Style */
+.btn-primary{
+    background-color: $tertiary;
+    border-color: $tertiary;
+    color: $white;
+    padding: $spacer-sm + 1 $spacer + 5 $spacer-sm;
+    font-size: $font-size;
+    letter-spacing: 0.5px;
+    line-height: $font-size + 6;
+    height: 40px;
+
+    &:hover, &:enabled:hover{
+        background-color: darken($tertiary, 10%);
+        border-color: darken($tertiary, 10%);
+        color: $white;
+    }
+}
+.p-fileupload{
+    .p-button{
+        &.p-fileupload-choose{
+            background-color: $primary;
+            color: $white;
+            border-color: $primary;
+        }
+    }
+}
+/* Button Style */
+
+/* Animation */
+@keyframes fadeIn{
+    0%{
+        top: 150%;
+    }
+    100%{
+        top: 125%;
+    }
+}
+/* Animation */

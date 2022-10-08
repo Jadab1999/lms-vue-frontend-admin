@@ -1,0 +1,145 @@
+@import "../../../Variable.scss";
+
+.sup_login_container{
+    background: $body-bg url($General-bg-image-url) no-repeat center center/ auto 98%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 15px 0;
+
+    .sup_login_box{
+        display: flex;
+        background-color: #fff;
+        border-radius: 7px;
+        overflow: hidden;
+        width: 850px;
+        max-width: calc(100% - 30px);
+        filter: drop-shadow(0 0 2px rgba(125,141,148,0.5));
+
+        .sup_left{
+            max-width: 360px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            padding: 30px 60px 30px 30px;
+            text-align: center;
+
+            .sup_graphic{
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                object-position: top right;
+                object-fit: cover;
+            }
+
+            h1{
+                font-family: $font-family-secondary;
+                font-size: 40px;
+                line-height: 50px;
+                font-weight: 700;
+                color: #e8f4fe;
+                text-transform: uppercase;
+                margin: 0;
+                position: relative;
+                z-index: 2;
+            }
+        }
+
+        .sup_right{
+            width: 100%;
+            max-width: calc(100% - 360px);
+            padding: 80px 60px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .logo {
+                width: 100%;
+                max-width: 330px;
+                display: inline-block;
+                margin-bottom: 30px;
+
+                img{
+                    max-width: 100%;
+                }
+            }
+
+            .p-grid{
+                width: 100%;
+            }
+
+            form { 
+                label{
+                    color: #595959;
+                    font-weight: 700;
+                    font-family: $font-family-primary;
+                }
+
+                input{
+                    border: 0;
+                    border-bottom: 1px solid #d2d6de;
+                    border-radius: 0;
+
+                    &.error{
+                        border-bottom-color: $danger;
+                    }
+
+                    &.sucess{
+                        border-bottom-color: $success;
+                    }
+                }
+
+                button.p-button{
+                    width: auto;
+                }
+            }
+
+            .sup_submit_btn{
+                position: relative;
+
+                .sup_icon_container{
+                    display: none;
+                }
+
+                &.loading .sup_icon_container{
+                    display: block;
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    z-index: 1;
+                    background-color: rgba(208, 208, 208, 0.8);
+
+                    i{
+                        color: #fff;
+                    }
+                }
+            }
+
+            a.forget-pasword{
+                font-size: 14px;
+                font-weight: 700;
+                color: #222;
+                text-transform: uppercase;
+                font-family: $font-family-primary;
+                text-decoration: none;
+
+                &:hover{
+                    color: #06c8aa;
+                }
+            }
+        }
+    }
+}
+.sup_login_massage{
+    font-size: $font-size - 2;
+}

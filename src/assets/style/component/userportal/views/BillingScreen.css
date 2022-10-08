@@ -1,0 +1,88 @@
+.up_card_dectect {
+  position: relative;
+}
+
+.up_card_dectect figure {
+  display: block;
+  position: absolute;
+  width: 38px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: 7px;
+}
+
+.up_card_dectect figure img {
+  display: block;
+}
+
+.up_card_dectect .p-inputmask {
+  padding-right: 40px;
+}
+
+.up_cvv_wrap {
+  position: relative;
+}
+
+.up_cvv_wrap img {
+  position: absolute;
+  width: 38px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: 7px;
+}
+
+.sup_icon_container {
+  display: none;
+}
+
+.loading .sup_icon_container {
+  display: block;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 1;
+  background-color: rgba(208, 208, 208, 0.8);
+  border-radius: 6px;
+}
+
+.loading .sup_icon_container i {
+  color: #fff;
+}
+
+.btn-align-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.btn-align-center span {
+  -webkit-box-flex: 0 !important;
+      -ms-flex: 0 0 auto !important;
+          flex: 0 0 auto !important;
+}
+
+.p-button-label {
+  -webkit-box-flex: 0 !important;
+      -ms-flex: 0 0 auto !important;
+          flex: 0 0 auto !important;
+}
+/*# sourceMappingURL=BillingScreen.css.map */

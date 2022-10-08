@@ -1,0 +1,197 @@
+.text-danger {
+  color: #e60017 !important;
+}
+
+.text-success {
+  color: #0dbb4d !important;
+}
+
+.text-warning {
+  color: #ffaa05 !important;
+}
+
+.text-primary {
+  color: #2767da !important;
+}
+
+.text-secondary {
+  color: #06c8aa !important;
+}
+
+.text-white {
+  color: #ffffff !important;
+}
+
+.text-black {
+  color: #000000 !important;
+}
+
+.bg-danger {
+  background-color: #e60017 !important;
+}
+
+.bg-success {
+  background-color: #0dbb4d !important;
+}
+
+.bg-warning {
+  background-color: #ffaa05 !important;
+}
+
+.bg-primary {
+  background-color: #2767da !important;
+}
+
+.bg-secondary {
+  background-color: #06c8aa !important;
+}
+
+.bg-white {
+  background-color: #ffffff !important;
+}
+
+.bg-black {
+  background-color: #000000 !important;
+}
+
+.sup_page_heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+}
+
+.sup_page_heading h2 {
+  margin: 0 20px 0 0;
+}
+
+.sup_menu_access_set .p-multiselect {
+  width: 100%;
+}
+
+.sup_menu_access_set .p-multiselect-items .p-multiselect-item {
+  width: 33.33%;
+}
+
+.sup_menu_access_set input {
+  border: 0;
+}
+
+.sup_menu_access_set h4 {
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.4;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.sup_role_edit .p-multiselect, .sup_role_add .p-multiselect {
+  width: 100%;
+}
+
+.sup_role_edit h4, .sup_role_add h4 {
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.4;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.sup_menu_given {
+  border-top: 1px solid #cecece;
+  border-bottom: 1px solid #cecece;
+  margin: 12px 0 0;
+  padding: 10px 0;
+}
+
+.sup_menu_given span {
+  font-size: 14px;
+  color: gray;
+}
+
+.sup_menu_given ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.sup_menu_given ul li {
+  border-radius: 5px;
+  padding: 4px 8px;
+  margin-right: 8px;
+  margin-bottom: 8px;
+  background-color: #3d76de;
+  color: #ffffff;
+  font-size: 12px;
+  line-height: 17px;
+  cursor: pointer;
+}
+
+.sup_menu_given ul span.sup_menu_badge {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sup_menu_given ul span.sup_menu_badge i {
+  margin-left: 5px;
+  font-size: 13px;
+  line-height: 15px;
+}
+
+.sup_search_clear {
+  height: 39px;
+  margin-right: 10px;
+}
+
+.sup_role_status {
+  border-radius: 100%;
+  padding: 5px;
+  width: auto;
+  display: inline;
+}
+
+.sup_role_status i.pi {
+  border: 2px solid transparent;
+  border-radius: 100%;
+  padding: 3px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 11px;
+  width: 22px;
+  height: 22px;
+  line-height: 14px;
+  font-weight: 600;
+  margin-right: 6px;
+}
+
+.sup_role_status.sup_role_status_active {
+  color: #0dbb4d;
+}
+
+.sup_role_status.sup_role_status_active i.pi {
+  border-color: #0dbb4d;
+}
+
+.sup_role_status.sup_role_status_deactive {
+  color: #e60017;
+}
+
+.sup_role_status.sup_role_status_deactive i.pi {
+  border-color: #e60017;
+}
+/*# sourceMappingURL=roleManagement.css.map */

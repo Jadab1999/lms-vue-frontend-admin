@@ -1,0 +1,115 @@
+@import "../../../../Variable";
+
+.sup_page_heading{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 20px;
+    h2{
+        margin: 0 20px 0 0;
+    }
+}
+
+.confirmation-content{
+    &.confirmation-warning{
+        i.pi{
+            color: $warning;
+            margin-top: $spacer-sm;
+        }
+    }
+    i.pi{
+        font-size: $font-size + 10;
+    }
+}
+
+.sup_customer_status {
+    border-radius: 100%;
+    padding: 5px;
+    width: auto;
+    display: inline;
+    i.pi{
+        border: 2px solid transparent;
+        border-radius: 100%;
+        padding: 3px;
+        box-sizing: border-box;
+        font-size: $font-size - 5;
+        width: 22px;
+        height: 22px;
+        line-height: $font-size - 2;
+        font-weight: 600;
+        margin-right: 6px;
+    }
+
+    &.sup_status_active{
+        color: $success;
+        i.pi{
+            border-color: $success;
+        }
+    }
+
+    &.sup_status_deactive{
+        color: $danger;
+        i.pi{
+            border-color: $danger;
+        }
+    }
+}
+
+.sup_customer_icon{
+    width: 100px;
+    display: block;
+    position: relative;
+    margin: 0 auto;
+
+    figure{
+        display: block;
+
+        img{
+            border-radius: 100%;
+            overflow: hidden;
+            border: 5px solid $white;
+            box-shadow: 1px 1px 4px #00000030;
+        }
+    }
+
+    .p-button{
+        position: absolute;
+        bottom: 5px;
+        right: 0;
+    }
+}
+
+.sup_customer_highlight{
+    text-align: center;
+    width: 100%;
+
+    h3{
+        margin-top: $spacer - 10;
+    }
+}
+
+.sup_customer_info{
+    padding: 0 $spacer;
+
+    ul{
+        list-style: none;
+        padding: $spacer $spacer + 10 $spacer $spacer + 10;
+
+        li{
+            font-size: $font-size;
+            margin-bottom: $spacer - 8;
+            display: flex;
+            align-items: center;
+    
+            i.pi{
+                font-size: $font-size + 4;
+                margin-right: $spacer - 5;
+            }
+        }
+    }
+
+    .sup_customer_edit_btn{
+        margin: $spacer auto 0;
+        display: table;
+    }
+}

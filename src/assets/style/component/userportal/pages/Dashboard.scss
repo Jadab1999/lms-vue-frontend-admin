@@ -1,0 +1,85 @@
+@import '../../../Variable';
+
+.up_dashboard{
+    display: flex;
+    align-items: center;
+
+    .up_main_container_sm{
+        .up_dashboard_menu_list{
+            height: 100%;
+            ul{
+                display: flex !important;
+                flex-wrap: wrap;
+                justify-content: center;
+                list-style: none;
+                height: 100%;
+                li{
+                    width: 20%;
+                    text-align: center;
+                    padding: 0 $spacer + 5;
+
+                    a{
+                        color: rgba($black, 0.85);
+                        transition: color 0.5s ease-in-out;
+                        display: block;
+                        max-width: 100%;
+
+                        &:hover{
+                            color: $primary;
+                        }
+
+                        figure{
+                            border: 1px solid #337ab7;
+                            padding: 35px 0;
+                            margin: 0 auto 15px;
+                            border-radius: 5px;
+                            width: 100%;
+                            height: 145px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+
+                            img{
+                                margin: 0 auto;
+                                @media screen and (max-width: 640px) {
+                                    max-width: 54px;
+                                }
+                            }
+                        }
+
+                        h4{
+                            margin-bottom: $spacer-sm;
+                            font-weight: 600;
+                            font-family: $font-family-tertiary;
+
+                            @media screen and (max-width: 640px) {
+                                font-size: 16px;
+                            }
+                        }
+
+                        p{
+                            font-size: $font-size - 2;
+                            line-height: 1.4;
+                            font-family: $font-family-tertiary;
+                        }
+                    }
+
+                    @media screen and (max-width: 1660px) {
+                        padding: 0 12px;
+                    }
+                    @media screen and (max-width: 840px) {
+                        width: 33.33%;
+                        margin: 0 0 25px 0;
+                    }
+                    @media screen and (max-width: 640px) {
+                        width: 50%;
+                        margin: 0 0 25px 0;
+                    }
+                }
+            }
+        }
+    }
+}
+.p-dialog.add_card_dashboard_billing{
+    margin: 0 20px;
+}
