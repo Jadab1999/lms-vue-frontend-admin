@@ -3,7 +3,7 @@
         <div class="up_main_contianer_full">
             <div class="up_footer_menu">
                 <div class="up_copywrite" :value="currYear.date">
-                    <p>© {{currYear.date}} TruAbilities All Rights Reserved.</p>
+                    <p>© {{currYear.date}} LMS All Rights Reserved.</p>
                 </div>
                 <div class="up_footer_menu_wrap">
                     <ul>

@@ -5,25 +5,25 @@
                 <ul>
                     <li>
                         <router-link to="" >
-                            <figure><img :src="imageUrlFrontEnd + 'dist/img/addnewsite-icon.png'" alt="My profile"></figure>
+                            <figure><img class="body-boxes" src="../../../assets/images/labours/profile.jpg" alt="My profile"></figure>
                             <h4>My profile</h4>
                         </router-link>
                     </li>
                     <li>
                         <router-link to="">
-                            <figure><img :src="imageUrlFrontEnd + 'dist/img/mexsisting-icon.png'" alt="contractors"></figure>
+                            <figure><img class="body-boxes" src="../../../assets/images/labours/people.jpg" alt="contractors"></figure>
                             <h4>Contractors</h4>
                         </router-link>
                     </li>
                     <li>
                         <router-link to="">
-                            <figure><img :src="imageUrlFrontEnd + 'dist/img/managebranding-icon.png'" alt="Contacted Contractors"></figure>
+                            <figure><img class="body-boxes" src="../../../assets/images/labours/contactedLab.jpg" alt="Contacted Contractors"></figure>
                             <h4>Contacted Contractors</h4>
                         </router-link>
                     </li>
                     <li>
                         <router-link to="">
-                            <figure><img :src="imageUrlFrontEnd + 'dist/img/supportvedio-icon.png'" alt="Support"></figure>
+                            <figure><img class="body-boxes" src="../../../assets/images/labours/support.png" alt="Support"></figure>
                             <h4>Support</h4>
                         </router-link>
                     </li>
@@ -53,5 +53,5 @@ export default {
 </script>
 
 <style lang="scss">
-@import '../../../assets/style/component/userportal/pages/Dashboard';
+@import '../../../assets/style/component/userportal/pages/Dashboard.css';
 </style>

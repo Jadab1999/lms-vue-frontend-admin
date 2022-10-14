@@ -120,12 +120,6 @@
   margin: 0 auto;
 }
 
-@media screen and (max-width: 640px) {
-  .up_dashboard .up_main_container_sm .up_dashboard_menu_list ul li a figure img {
-    max-width: 54px;
-  }
-}
-
 .up_dashboard .up_main_container_sm .up_dashboard_menu_list ul li a h4 {
   margin-bottom: 10px;
   font-weight: 600;
@@ -168,3 +162,156 @@
   margin: 0 20px;
 }
 /*# sourceMappingURL=Dashboard.css.map */
+
+/* Labour dasboard */
+
+.body-boxes{
+  width: 100px !important;
+  height: 100px;
+}
+
+@media screen and (max-width: 640px) {
+  .up_dashboard .up_main_container_sm .up_dashboard_menu_list ul li a figure img {
+    max-width: 100px;
+  }
+}
+/* Contractor dasboard */
+
+.con-body-boxes{
+  width: 100px !important;
+  height: 100px;
+}
+
+.con-body-companies {
+  width: 213px !important;
+  height: 142px;
+  border-radius: 4px;
+}
+
+.con-body-support {
+  width: 135px !important;
+  height: 135px;
+}
+
+@media screen and (max-width: 640px) {
+  .con-body-boxes{
+    width: 150px !important;
+    height: 150px;
+  }
+  .up_dashboard .up_main_container_sm .con_dashboard_menu_list ul li a figure img {
+    max-width: 147px !important;
+  }
+  .up_dashboard .up_main_container_sm .con_dashboard_menu_list ul li a figure {
+    border: 1px solid #337ab7;
+    padding: 35px 0;
+    margin: 0 auto 15px;
+    border-radius: 5px;
+    width: 100%;
+    height: 210px !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.up_dashboard .up_main_container_sm .con_dashboard_menu_list {
+  height: 100%;
+}
+
+.up_dashboard .up_main_container_sm .con_dashboard_menu_list ul {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  list-style: none;
+  height: 100%;
+}
+
+.up_dashboard .up_main_container_sm .con_dashboard_menu_list ul li {
+  width: 20%;
+  text-align: center;
+  padding: 0 25px;
+  margin: 0 0 45px 0;
+}
+
+.up_dashboard .up_main_container_sm .con_dashboard_menu_list ul li a {
+  color: rgba(0, 0, 0, 0.85);
+  -webkit-transition: color 0.5s ease-in-out;
+  transition: color 0.5s ease-in-out;
+  display: block;
+  max-width: 100%;
+}
+
+.up_dashboard .up_main_container_sm .con_dashboard_menu_list ul li a:hover {
+  color: #2767da;
+}
+
+.up_dashboard .up_main_container_sm .con_dashboard_menu_list ul li a figure {
+  border: 1px solid #337ab7;
+  padding: 35px 0;
+  margin: 0 auto 15px;
+  border-radius: 5px;
+  width: 100%;
+  height: 145px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.up_dashboard .up_main_container_sm .con_dashboard_menu_list ul li a figure img {
+  margin: 0 auto;
+}
+
+.up_dashboard .up_main_container_sm .con_dashboard_menu_list ul li a h4 {
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+}
+
+@media screen and (max-width: 640px) {
+  .up_dashboard .up_main_container_sm .con_dashboard_menu_list ul li a h4 {
+    font-size: 16px;
+  }
+}
+
+.up_dashboard .up_main_container_sm .con_dashboard_menu_list ul li a p {
+  font-size: 14px;
+  line-height: 1.4;
+  font-family: "Poppins", sans-serif;
+}
+
+@media screen and (max-width: 1660px) {
+  .up_dashboard .up_main_container_sm .con_dashboard_menu_list ul li {
+    padding: 0 12px;
+  }
+}
+
+@media screen and (max-width: 840px) {
+  .up_dashboard .up_main_container_sm .con_dashboard_menu_list ul li {
+    width: 33.33%;
+    margin: 0 0 25px 0;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .up_dashboard .up_main_container_sm .con_dashboard_menu_list ul li {
+    width: 100%;
+    margin: 0 0 25px 0;
+  }
+}

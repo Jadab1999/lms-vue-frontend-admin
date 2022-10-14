@@ -8,7 +8,7 @@
                 </div>
                 <div class="up_logo_wrap">
                     <router-link to="/customer/dashboard" class="up_logo">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRHpcqwj6RuBnis9zCi-ECPX9JsebA6WccrOG7Wm5O0nkjMdcjEVTX07sC75WG4d2El0o&usqp=CAU" class="lms-image" alt="Truabilities Image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRHpcqwj6RuBnis9zCi-ECPX9JsebA6WccrOG7Wm5O0nkjMdcjEVTX07sC75WG4d2El0o&usqp=CAU" class="lms-image" alt="Lms Image">
                     </router-link>
                 </div>
                 <div :class="['mobile_menu_overlay', showMobileMenu ? 'overlayActive':'']"></div>
@@ -30,27 +30,27 @@
                     </li>
                     <li class="desktop_menu_active">
                         <router-link to="invoice-list">
-                            <img src="" alt=""> Invoices
+                            <img src="#" alt=""> Invoices
                         </router-link>
                     </li>
                     <li class="dropdown user user-menu">
                         <div class="up_user_dropdown_toggle" data-toggle="dropdown" aria-expanded="false" @click="customerDropdownToggle('userMenu')">
-                            <img :src="customerDetails.avatar === null ? imageUrlFrontEnd + 'dist/img/profile-icon.png': customerDetails.avatar" alt=""> Profile
+                            <img :src="customerDetails.avatar === null ? 'https://www.freeiconspng.com/thumbs/profile-icon-png/am-a-19-year-old-multimedia-artist-student-from-manila--21.png': customerDetails.avatar" alt=""> Profile
                             <small><i class="pi pi-angle-down p-ml-2"></i></small>
                         </div>
                         <div :class="['up_user_dropdown', customerDropdownShow.usermenu ? 'up_user_dropdown_show' : '']">
                             <ul class="up_user_dropdown_menu" v-show="customerDropdownShow.usermenu">
                                 <li>
-                                    <router-link to="">My Profile</router-link>
+                                    <router-link to="cs">My Profile</router-link>
                                 </li>
                                 <li>
-                                    <router-link to="">Change Password</router-link>
+                                    <router-link to="cscs">Change Password</router-link>
                                 </li>
                                 <li>
-                                    <router-link to="">Settings</router-link>
+                                    <router-link to="cscscs">Settings</router-link>
                                 </li>
                                 <li>
-                                    <a @click="customerLogout()">Sign out</a>
+                                    <a @click="logout()">Sign out</a>
                                 </li>
                             </ul>
                         </div>
@@ -62,10 +62,10 @@
 </template>
 
 <script>
-import customerLogout from '../../../helper/userLogout/customerLogout';
+import {labourLogout} from '../../../helper/userLogout/customerLogout';
 import { userPortalNotification } from '../../../config/appUrls';
 import { apiKey, imageUrlFrontEnd } from '../../../config/constant';
-import { computed, onBeforeMount, reactive, onMounted } from 'vue';
+import { computed, onBeforeMount, reactive } from 'vue';
 import { useStore } from 'vuex';
 import axios from 'axios';
 
@@ -94,6 +94,14 @@ export default {
             notification: false,
             usermenu: false
         });
+
+        /**
+         * Labour logout function
+         */
+         function logout(){
+            //Generic fucntion call
+            labourLogout();
+        }
 
         const customerDropdownToggle = (type) =>{
             if (type === "userMenu") {
@@ -140,7 +148,7 @@ export default {
                 notification.unread = response.data.data.unreadCount;
             } catch(err){
                 if(err.response.status === 403 || store.getters.adminAuthToken === '' ){
-                    customerLogout();
+                    labourLogout();
                 } else {
                     console.log('error', err);
                 }
@@ -164,32 +172,32 @@ export default {
 
         }
 
-        const pollNotifications = async() =>{
-            try{
-                const response = await axios.get( userPortalNotification + '/user', {
-                    headers: {
-                        apiKey: apiKey,
-                        token: store.getters.adminAuthToken
-                    }, 
-                });
-                notification.data = response.data.data.notifications;
-                notification.count = response.data.data.total;
-                if(notification.unread !== response.data.data.unreadCount)
-                    notification.unread = response.data.data.unreadCount;
-                setTimeout(pollNotifications, 5000);
+        // const pollNotifications = async() =>{
+        //     try{
+        //         const response = await axios.get( userPortalNotification + '/user', {
+        //             headers: {
+        //                 apiKey: apiKey,
+        //                 token: store.getters.adminAuthToken
+        //             }, 
+        //         });
+        //         notification.data = response.data.data.notifications;
+        //         notification.count = response.data.data.total;
+        //         if(notification.unread !== response.data.data.unreadCount)
+        //             notification.unread = response.data.data.unreadCount;
+        //         setTimeout(pollNotifications, 5000);
 
-            } catch(err){
-                if(err.response.status === 403 || store.getters.adminAuthToken === '' ){
-                    customerLogout();
-                } else {
-                    console.log('error', err);
-                }
-            }
-        }
+        //     } catch(err){
+        //         if(err.response.status === 403 || store.getters.adminAuthToken === '' ){
+        //             customerLogout();
+        //         } else {
+        //             console.log('error', err);
+        //         }
+        //     }
+        // }
 
-        onMounted(() => {
-            setTimeout(pollNotifications, 3000);
-        })
+        // onMounted(() => {
+        //     setTimeout(pollNotifications, 3000);
+        // })
 
         return{
             customerDetails,
@@ -198,7 +206,7 @@ export default {
             imageUrlFrontEnd,
             customerDropdownShow,
             customerDropdownToggle,
-            customerLogout,
+            logout,
             closeOnClick,
             readNotification,
             fetchNotification

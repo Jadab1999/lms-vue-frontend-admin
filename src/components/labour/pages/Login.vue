@@ -41,7 +41,7 @@
 </template>
 
 <script>
-import { labourLoginAuth, userPortalUserVerify, userPortalWPLoginAuth } from '../../../config/appUrls';
+import { labourLoginAuth, userPortalUserVerify } from '../../../config/appUrls';
 import { apiKey, frontendUrl } from "../../../config/constant";
 import { validatePassword } from '../../../helper/validationProcess/ValidationProcess';
 import router from "../../../router";
@@ -91,7 +91,7 @@ export default {
         if (route.path.includes("verify")) {
           wpVerifyUser();
         } else {
-          wpUserLogin();
+          // wpUserLogin();
         }
       }
 
@@ -163,38 +163,38 @@ export default {
         }
       }
 
-      async function wpUserLogin () {
-        try{
-          const response = await axios.get( userPortalWPLoginAuth, {
-            params:{
-              uuid: redirect.uuid
-            },
-            headers: {
-              apiKey: apiKey
-            },
-          });
-          if(response.status === 200) {
-            apiError.status = response.data.status;
-            apiError.message = response.data.message;
-            router.push({name: "CustomerDashboard"});
-            store.dispatch('customerAuthAC',{
-              isAuth: true,
-              token: response.data.data.token
-            });
-            store.dispatch('customerDetailsAC',{
-              value: response.data.data
-            });
-            localStorage.setItem('customer-token', response.data.data.token);
-            localStorage.setItem('customer-details', JSON.stringify(response.data.data));
-            if(localStorage.getItem('admin-token')){
-              localStorage.removeItem('admin-token');
-              localStorage.removeItem('customer-details');
-            }
-          }
-        } catch(err){
-          console.error(err);
-        }
-      }
+      // async function wpUserLogin () {
+      //   try{
+      //     const response = await axios.get( userPortalWPLoginAuth, {
+      //       params:{
+      //         uuid: redirect.uuid
+      //       },
+      //       headers: {
+      //         apiKey: apiKey
+      //       },
+      //     });
+      //     if(response.status === 200) {
+      //       apiError.status = response.data.status;
+      //       apiError.message = response.data.message;
+      //       router.push({name: "CustomerDashboard"});
+      //       store.dispatch('customerAuthAC',{
+      //         isAuth: true,
+      //         token: response.data.data.token
+      //       });
+      //       store.dispatch('customerDetailsAC',{
+      //         value: response.data.data
+      //       });
+      //       localStorage.setItem('customer-token', response.data.data.token);
+      //       localStorage.setItem('customer-details', JSON.stringify(response.data.data));
+      //       if(localStorage.getItem('admin-token')){
+      //         localStorage.removeItem('admin-token');
+      //         localStorage.removeItem('customer-details');
+      //       }
+      //     }
+      //   } catch(err){
+      //     console.error(err);
+      //   }
+      // }
   
       return{
         loginValue,

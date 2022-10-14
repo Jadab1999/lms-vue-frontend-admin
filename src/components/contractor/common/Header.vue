@@ -19,38 +19,40 @@
             <div class="up_right_block">
                 <nav class="up_right_nav">
                     <li class="desktop_menu_active">
-                        <router-link to="">
-                            <img :src="imageUrlFrontEnd + 'dist/img/research.png'" alt=""> Monitor
+                        <router-link to="ds">
+                            <img src="" alt=""> Monitor
                         </router-link>
                     </li>
                     <li class="desktop_menu_active">
-                        <router-link to="">
-                            <img :src="imageUrlFrontEnd + 'dist/img/billing-icon.png'" alt=""> Billing
+                        <router-link to="vsv">
+                            <img src="" alt=""> Billing
                         </router-link>
                     </li>
                     <li class="desktop_menu_active">
-                        <router-link to="">
-                            <img :src="imageUrlFrontEnd + 'dist/img/invoice-icon.png'" alt=""> Invoices
+                        <router-link to="vsv">
+                            <img src="" alt=""> Invoices
                         </router-link>
                     </li>
                     <li class="dropdown user user-menu">
                         <div class="up_user_dropdown_toggle" data-toggle="dropdown" aria-expanded="false" @click="customerDropdownToggle('userMenu')">
-                            <img :src="customerDetails.avatar === null ? imageUrlFrontEnd + 'dist/img/profile-icon.png': customerDetails.avatar" alt=""> Profile
+                            <img :src="customerDetails.avatar === null ? 
+                            'https://www.freeiconspng.com/thumbs/profile-icon-png/am-a-19-year-old-multimedia-artist-student-from-manila--21.png': 
+                            customerDetails.avatar" alt=""> Profile
                             <small><i class="pi pi-angle-down p-ml-2"></i></small>
                         </div>
                         <div :class="['up_user_dropdown', customerDropdownShow.usermenu ? 'up_user_dropdown_show' : '']">
                             <ul class="up_user_dropdown_menu" v-show="customerDropdownShow.usermenu">
                                 <li>
-                                    <router-link to="">My Profile</router-link>
+                                    <router-link to="cscsc">My Profile</router-link>
                                 </li>
                                 <li>
-                                    <router-link to="">Change Password</router-link>
+                                    <router-link to="cscs">Change Password</router-link>
                                 </li>
                                 <li>
-                                    <router-link to="">Settings</router-link>
+                                    <router-link to="s">Settings</router-link>
                                 </li>
                                 <li>
-                                    <a @click="customerLogout()">Sign out</a>
+                                    <a @click="logout()">Sign out</a>
                                 </li>
                             </ul>
                         </div>
@@ -62,10 +64,10 @@
 </template>
 
 <script>
-import customerLogout from '../../../helper/userLogout/customerLogout';
+import {contractorLogout} from '../../../helper/userLogout/customerLogout';
 import { userPortalNotification } from '../../../config/appUrls';
 import { apiKey, imageUrlFrontEnd } from '../../../config/constant';
-import { computed, onBeforeMount, reactive, onMounted } from 'vue';
+import { computed, onBeforeMount, reactive } from 'vue';
 import { useStore } from 'vuex';
 import axios from 'axios';
 
@@ -107,7 +109,15 @@ export default {
             data: null,
             count: null,
             unread: null,
-        })
+        });
+
+        /**
+         * Contractor logout function
+         */
+         function logout(){
+            //Generic fucntion call
+            contractorLogout();
+        }
 
         document.addEventListener("click", function(e){
             if(customerDropdownShow.usermenu === true){
@@ -140,7 +150,7 @@ export default {
                 notification.unread = response.data.data.unreadCount;
             } catch(err){
                 if(err.response.status === 403 || store.getters.adminAuthToken === '' ){
-                    customerLogout();
+                    logout();
                 } else {
                     console.log('error', err);
                 }
@@ -164,32 +174,32 @@ export default {
 
         }
 
-        const pollNotifications = async() =>{
-            try{
-                const response = await axios.get( userPortalNotification + '/user', {
-                    headers: {
-                        apiKey: apiKey,
-                        token: store.getters.adminAuthToken
-                    }, 
-                });
-                notification.data = response.data.data.notifications;
-                notification.count = response.data.data.total;
-                if(notification.unread !== response.data.data.unreadCount)
-                    notification.unread = response.data.data.unreadCount;
-                setTimeout(pollNotifications, 5000);
+        // const pollNotifications = async() =>{
+        //     try{
+        //         const response = await axios.get( userPortalNotification + '/user', {
+        //             headers: {
+        //                 apiKey: apiKey,
+        //                 token: store.getters.adminAuthToken
+        //             }, 
+        //         });
+        //         notification.data = response.data.data.notifications;
+        //         notification.count = response.data.data.total;
+        //         if(notification.unread !== response.data.data.unreadCount)
+        //             notification.unread = response.data.data.unreadCount;
+        //         setTimeout(pollNotifications, 5000);
 
-            } catch(err){
-                if(err.response.status === 403 || store.getters.adminAuthToken === '' ){
-                    customerLogout();
-                } else {
-                    console.log('error', err);
-                }
-            }
-        }
+        //     } catch(err){
+        //         if(err.response.status === 403 || store.getters.adminAuthToken === '' ){
+        //             logout();
+        //         } else {
+        //             console.log('error', err);
+        //         }
+        //     }
+        // }
 
-        onMounted(() => {
-            setTimeout(pollNotifications, 3000);
-        })
+        // onMounted(() => {
+        //     setTimeout(pollNotifications, 3000);
+        // })
 
         return{
             customerDetails,
@@ -198,7 +208,7 @@ export default {
             imageUrlFrontEnd,
             customerDropdownShow,
             customerDropdownToggle,
-            customerLogout,
+            logout,
             closeOnClick,
             readNotification,
             fetchNotification
