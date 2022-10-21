@@ -74,6 +74,36 @@ const routes = [
             component: () => defineAsyncComponent(() => import('../components/superAdmin/pages/Dashboard.vue')),
             meta: { title: 'Dashboard - LMS Admin' }
         },
+        {
+          path: "labours",
+          name: "SuperAdminLaboursList",
+          component: () => defineAsyncComponent(() => import('../components/superAdmin/pages/labourDetails/lbList.vue')),
+          meta: { title: 'Labour Details - LMS Admin' }
+        },
+        {
+          path: "contractors",
+          name: "SuperAdminContractorsList",
+          component: () => defineAsyncComponent(() => import('../components/superAdmin/pages/contractorDetails/ctList.vue')),
+          meta: { title: 'Contractor Details - LMS Admin' }
+        },
+        {
+          path: "email-type",
+          name: "SuperAdminEmailType",
+          component: () => defineAsyncComponent(() => import('../components/superAdmin/pages/settings/emailType.vue')),
+          meta: { title: 'Email Type - LMS Admin' }
+        },
+        {
+          path: "email-template",
+          name: "SuperAdminEmailTemplate",
+          component: () => defineAsyncComponent(() => import('../components/superAdmin/pages/settings/emailTemplate.vue')),
+          meta: { title: 'Email Template - LMS Admin' }
+        },
+        {
+          path: "email-recipients",
+          name: "SuperAdminEmailRecipients",
+          component: () => defineAsyncComponent(() => import('../components/superAdmin/pages/settings/emailRecipients.vue')),
+          meta: { title: 'Email Recipients - LMS Admin' }
+        },
     ]}
 ]
 
