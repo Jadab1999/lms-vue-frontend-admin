@@ -24,6 +24,18 @@ const routes = [
             component: () => defineAsyncComponent(() => import('../components/labour/pages/Dashboard.vue')),
             meta: { title: 'Dashboard - LMS Customer Portal' }
           },
+          {
+            path: "nearest-contractors",
+            name: "FindNearestContractors",
+            component: () => defineAsyncComponent(() => import('../components/labour/pages/findContractors.vue')),
+            meta: { title: 'Find Contractors - LMS Customer Portal' }
+          },
+          {
+            path: "contacted-contractors",
+            name: "ContactedContractors",
+            component: () => defineAsyncComponent(() => import('../components/labour/pages/contactedContractors.vue')),
+            meta: { title: 'Contacted Contractors - LMS Customer Portal' }
+          },
         ]
     },
 

@@ -7,7 +7,7 @@
                     <i class="pi pi-times"></i>
                 </div>
                 <div class="up_logo_wrap">
-                    <router-link to="/customer/dashboard" class="up_logo">
+                    <router-link to="/labours/dashboard" class="up_logo">
                         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRHpcqwj6RuBnis9zCi-ECPX9JsebA6WccrOG7Wm5O0nkjMdcjEVTX07sC75WG4d2El0o&usqp=CAU" class="lms-image" alt="Lms Image">
                     </router-link>
                 </div>

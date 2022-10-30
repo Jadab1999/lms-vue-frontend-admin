@@ -66,19 +66,19 @@ export const laboursExport = superAdminBaseUrl + '';
 /**
  * ADMIN Contractor List
  */
-/**Super Admin Labour list */
+/**Super Admin Contractor list */
 export const allContractors = superAdminBaseUrl + 'customer/contractors';
-/**Super Admin Add Labour */
+/**Super Admin Add Contractor */
 export const addContractor = superAdminBaseUrl + 'customer/add-contractor';
 /**Super Admin Location list */
 export const allLocationDt = superAdminBaseUrl + 'customer/countries';
-/**Super Admin Labour by id */
+/**Super Admin Contractor by id */
 export const contractorById = superAdminBaseUrl + 'customer/contractor/one';
-/**Super Admin Delete Labour */
+/**Super Admin Delete Contractor */
 export const deleteContractors = superAdminBaseUrl + 'customer/delete-contractor';
-/**Super Admin Edit Labour */
+/**Super Admin Edit Contractor */
 export const editContractors = superAdminBaseUrl + 'customer/edit-contractor';
-/**Super Admin Labour export */
+/**Super Admin Contractor export */
 export const contractorsExport = superAdminBaseUrl + '';
 
 
@@ -97,3 +97,9 @@ export const contractorLoginAuth = contractorBaseUrl + 'user/login';
  */
 /**Labour Login **/
 export const labourLoginAuth = labourBaseUrl + 'labour-login/login';
+/**Find nearest contractors */
+export const nearestContractors = labourBaseUrl + 'find-contractors';
+/**Find nearest contractors */
+export const contactedContractors = labourBaseUrl + 'find-contractors/contacted';
+/**Find contacted contractors */
+export const allContactedContractors = labourBaseUrl + 'find-contractors/all';

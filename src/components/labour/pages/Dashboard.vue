@@ -10,13 +10,13 @@
                         </router-link>
                     </li>
                     <li>
-                        <router-link to="">
+                        <router-link to="nearest-contractors">
                             <figure><img class="body-boxes" src="../../../assets/images/labours/people.jpg" alt="contractors"></figure>
                             <h4>Contractors</h4>
                         </router-link>
                     </li>
                     <li>
-                        <router-link to="">
+                        <router-link to="contacted-contractors">
                             <figure><img class="body-boxes" src="../../../assets/images/labours/contactedLab.jpg" alt="Contacted Contractors"></figure>
                             <h4>Contacted Contractors</h4>
                         </router-link>
