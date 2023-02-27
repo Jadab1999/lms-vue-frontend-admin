@@ -36,6 +36,24 @@ const routes = [
             component: () => defineAsyncComponent(() => import('../components/labour/pages/contactedContractors.vue')),
             meta: { title: 'Contacted Contractors - LMS Customer Portal' }
           },
+          {
+            path: "wallet",
+            name: "LabourWallet",
+            component: () => defineAsyncComponent(() => import('../components/labour/pages/wallet.vue')),
+            meta: { title: 'Labour Wallet - LMS Customer Portal' }
+          },
+          {
+            path: "contact-us",
+            name: "ContactUs",
+            component: () => defineAsyncComponent(() => import('../components/labour/pages/contact.vue')),
+            meta: { title: 'Contact Us - LMS Customer Portal' }
+          },
+          {
+            path: "my-profile",
+            name: "Profile",
+            component: () => defineAsyncComponent(() => import('../components/labour/pages/profile.vue')),
+            meta: { title: 'My Profile - LMS Customer Portal' }
+          },
         ]
     },
 

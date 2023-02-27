@@ -4,7 +4,7 @@
             <div class="up_dashboard_menu_list">
                 <ul>
                     <li>
-                        <router-link to="" >
+                        <router-link to="my-profile" >
                             <figure><img class="body-boxes" src="../../../assets/images/labours/profile.jpg" alt="My profile"></figure>
                             <h4>My profile</h4>
                         </router-link>
@@ -22,7 +22,7 @@
                         </router-link>
                     </li>
                     <li>
-                        <router-link to="">
+                        <router-link to="contact-us">
                             <figure><img class="body-boxes" src="../../../assets/images/labours/support.png" alt="Support"></figure>
                             <h4>Support</h4>
                         </router-link>

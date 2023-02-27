@@ -18,7 +18,7 @@
             </div>
             <div class="up_right_block">
                 <nav class="up_right_nav">
-                    <li class="desktop_menu_active">
+                    <!-- <li class="desktop_menu_active">
                         <router-link to="monitoring">
                             <img src="" alt=""> Monitor
                         </router-link>
@@ -32,7 +32,7 @@
                         <router-link to="invoice-list">
                             <img src="#" alt=""> Invoices
                         </router-link>
-                    </li>
+                    </li> -->
                     <li class="dropdown user user-menu">
                         <div class="up_user_dropdown_toggle" data-toggle="dropdown" aria-expanded="false" @click="customerDropdownToggle('userMenu')">
                             <img :src="customerDetails.avatar === null ? 'https://www.freeiconspng.com/thumbs/profile-icon-png/am-a-19-year-old-multimedia-artist-student-from-manila--21.png': customerDetails.avatar" alt=""> Profile
@@ -41,7 +41,10 @@
                         <div :class="['up_user_dropdown', customerDropdownShow.usermenu ? 'up_user_dropdown_show' : '']">
                             <ul class="up_user_dropdown_menu" v-show="customerDropdownShow.usermenu">
                                 <li>
-                                    <router-link to="cs">My Profile</router-link>
+                                    <router-link to="my-profile">My Profile</router-link>
+                                </li>
+                                <li>
+                                    <router-link to="wallet">My Wallet</router-link>
                                 </li>
                                 <li>
                                     <router-link to="cscs">Change Password</router-link>

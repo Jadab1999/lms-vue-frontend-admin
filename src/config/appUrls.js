@@ -97,9 +97,13 @@ export const contractorLoginAuth = contractorBaseUrl + 'user/login';
  */
 /**Labour Login **/
 export const labourLoginAuth = labourBaseUrl + 'labour-login/login';
+/**Labour Profile **/
+export const labourProfile = labourBaseUrl + 'labour-login/profile';
 /**Find nearest contractors */
 export const nearestContractors = labourBaseUrl + 'find-contractors';
 /**Find nearest contractors */
 export const contactedContractors = labourBaseUrl + 'find-contractors/contacted';
 /**Find contacted contractors */
-export const allContactedContractors = labourBaseUrl + 'find-contractors/all';
+export const allContactedContractors = labourBaseUrl + 'find-contractors/contacted-all';
+/**Find contacted contractors */
+export const contactedByLabour = labourBaseUrl + 'contact/contact-us';

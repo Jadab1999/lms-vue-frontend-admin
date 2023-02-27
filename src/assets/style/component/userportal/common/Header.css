@@ -594,7 +594,7 @@
   .mobi_menu_toggler {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;
+    display: none;
     width: 30px;
     height: 30px;
     -webkit-box-pack: center;
@@ -606,7 +606,7 @@
   }
   .mobi_menu_toggler i.pi-bars {
     color: #fff;
-    display: block;
+    display: none;
     -webkit-transform: scale(1);
             transform: scale(1);
     transition: 0.1s;
@@ -617,7 +617,7 @@
   }
   .mobi_menu_toggler i.pi-times {
     color: #fff;
-    display: block;
+    display: none;
     -webkit-transform: scale(0);
             transform: scale(0);
     transition: 0.1s;
